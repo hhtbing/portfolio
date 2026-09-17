@@ -1,117 +1,19 @@
-# Codex Host Bridge - Remote Development Bridge
+# Codex Host Bridge — 远程开发桥接 / Codex Host Bridge — Remote Development Bridge
 
-![Platform](https://img.shields.io/badge/Platform-Windows-lightblue)
-![Tech](https://img.shields.io/badge/Tech-C%23%20%7C%20WPF%20%7C%20WebSocket-orange)
+> 运行在 Windows 主机上的 WPF 桌面应用，把远程 Linux / macOS / Windows 节点的 Codex 客户端接入本机 Codex App Server。
 
-## 📋 Project Overview
+> WPF desktop app on Windows that connects remote Codex clients (Linux / macOS / Windows) to the local Codex App Server.
 
-Codex Host Bridge is a WPF desktop application running on Windows hosts, designed to connect remote Codex clients (Linux, macOS, or other Windows nodes) to the local Codex App Server. Remote nodes connect to the Bridge Gateway via Tailnet, and after forwarding through the Gateway, create and operate Codex sessions in the Windows host's configured project directory.
+- 类别 Category：AI 与平台 / AI & Platform
+- 状态 Status：当前基线 v0.4.40，用于跨平台远程开发工作流。 / Current baseline v0.4.40, used for cross-platform remote development workflows.
+- 技术栈 Tech Stack：C# / .NET、WPF、WebSocket、Tailscale、systemd
 
-**Current Baseline:** v0.4.40  
-**Project Type:** Development Tool Platform  
-**Development Period:** 2024-2025  
-**Project Status:** Production Use
+## 🌐 交互式双语页面 / Interactive Bilingual Page
 
-## 🎯 Why This Project
+点击打开可切换 **中文 / English** 的完整项目页面：
+Open the full project page with **中文 / English** switching:
 
-Windows desktop Codex can SSH to other hosts, enabling maintenance operations from Windows to remote hosts. However, there's also a need for the reverse direction: allowing Linux or macOS Codex clients to join Windows host's project context.
-
-This project provides that reverse channel:
-
-```
-Remote Codex Client
-        |
-        | Tailnet WebSocket
-        ↓
-Windows Codex Host Bridge Gateway
-        |
-        | Local loopback forwarding
-        ↓
-Windows Codex App Server
-        |
-        ↓
-Windows Host Project Directory
-```
-
-## ⚡ Core Features
-
-### 1. Manage Windows Codex Services
-- Discover and start local Codex App Server
-- Maintain lifecycle and readiness state
-- Handle startup, stop, restart, port conflicts
-
-### 2. Provide Remote Business Entry
-- Listen for remote WebSocket connections on Windows Tailnet address
-- Forward connected node connections to local App Server
-- Maintain connection count, node connection count, activity tracking
-
-### 3. Maintain Node Access Status
-- Display node name, hostname, Tailnet address, platform
-- Gateway sessions, App Server status, project status
-- Allow/Deny admission model
-
-### 4. Linux Node Permanent Proxy
-- Unified Linux onboarding materials
-- Permanent proxy with systemd service
-- Connection reports and verification scripts
-
-## 🏗️ System Architecture
-
-### Component Relationships
-
-```
-Remote Node (Linux/macOS)
-        ↓
-  Permanent Proxy
-        ↓
-Windows Tailnet Gateway
-        ↓
-Windows Codex App Server
-        ↓
-Windows Project Directory
-```
-
-### Key Technologies
-
-- **WPF:** Desktop application UI
-- **WebSocket:** Node communication protocol
-- **Tailscale:** Private network connectivity
-- **systemd:** Linux node service management
-
-## 💡 Technical Highlights
-
-- Cross-platform remote development support
-- Session-based connection forwarding
-- Node admission and access control
-- Status observation and read-only export
-- Support for permanent Linux node connection
-
-## 🛠️ Tech Stack
-
-- C# / .NET
-- WPF (Windows Presentation Foundation)
-- WebSocket
-- Tailscale
-- systemd (for Linux nodes)
-
-## 📚 Repository Structure
-
-```
-Codex-Host-Bridge/
-├── src/CodexHostBridge/       # Windows WPF Bridge main program
-├── nodes/linux/               # Linux node onboarding materials
-├── docs/testing/              # Test plans and acceptance evidence
-├── docs/release/              # Version release records
-├── docs/plans/                # Project plans and closure records
-├── docs/integration/          # AgentMeshOS state contract
-└── artifacts/releases/        # Release programs and verification materials
-```
-
-## 🔗 Related Links
-
-- Windows Bridge: Desktop application for Codex service management
-- Linux Node Proxy: Permanent connection via systemd service
+👉 [https://hhtbing.github.io/portfolio/projects/01-ai-platform/codex-bridge/](https://hhtbing.github.io/portfolio/projects/01-ai-platform/codex-bridge/)
 
 ---
-
-*This tool bridges development environments across different operating systems and enables remote AI-assisted development workflows.*
+[返回作品集 / Back to Portfolio](https://hhtbing.github.io/portfolio/)
