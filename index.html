@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benson | Portfolio</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="lang-bar">
+  <button class="lang-switch" data-lang="zh" >中文</button>
+  <button class="lang-switch" data-lang="en">English</button>
+</div>
+
+<div class="hero">
+  <h1 data-lang-zh="Benson 的作品集" data-lang-en="Benson's Portfolio"></h1>
+  <p class="tagline" data-lang-zh="AI 辅助全栈工程师 | AIoT 开发者 | Vibe Coding 实践者" data-lang-en="AI-Assisted Full-Stack Engineer | AIoT Developer | Vibe Coding Practitioner"></p>
+  <p data-lang-zh="电子工程背景，长期参与医疗电子、嵌入式系统与全栈开发。专注使用 Codex 等 AI 工具（Vibe Coding），结合 Git、终端、Docker 快速理解陌生系统并构建各类应用。" data-lang-en="Electronic engineering background with extensive experience in medical electronics, embedded systems, and full-stack development. Specialized in AI-assisted development (Vibe Coding) using Codex, combining Git, terminal, and Docker to rapidly understand and build various applications."></p>
+</div>
+
+<div class="section">
+  <h2 data-lang-zh="核心能力" data-lang-en="Core Capabilities"></h2>
+  <div class="stats">
+    <div class="stat-card"><div class="num" data-lang-zh="19" data-lang-en="19"></div><div class="label" data-lang-zh="公开项目" data-lang-en="Public Projects"></div></div>
+    <div class="stat-card"><div class="num" data-lang-zh="7" data-lang-en="7"></div><div class="label" data-lang-zh="技术领域" data-lang-en="Tech Domains"></div></div>
+    <div class="stat-card"><div class="num" data-lang-zh="5+" data-lang-en="5+"></div><div class="label" data-lang-zh="生产系统" data-lang-en="Production Systems"></div></div>
+    <div class="stat-card"><div class="num" data-lang-zh="10+" data-lang-en="10+"></div><div class="label" data-lang-zh="开发工具" data-lang-en="Dev Tools"></div></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2 data-lang-zh="精选项目" data-lang-en="Featured Projects"></h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3><a href="projects/01-ai-platform/agentmeshos/" data-lang-zh="AgentMeshOS — 自托管 AI Agent 平台" data-lang-en="AgentMeshOS — Self-Hosted AI Agent Platform"></a></h3>
+      <p class="desc" data-lang-zh="自托管 AI Agent 运行时平台，支持分布式任务调度、多节点协同与统一成果管理。" data-lang-en="Self-hosted AI agent runtime platform with distributed task scheduling, multi-node coordination, and unified artifact management."></p>
+      <div class="tags"><span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Nomad</span><span class="tech-tag">Docker</span><span class="tech-tag">Tailscale</span></div>
+    </div>
+
+    <div class="project-card">
+      <h3><a href="projects/02-mobile/owlcare/" data-lang-zh="OwlCare — 智能监护系统" data-lang-en="OwlCare — Smart Health Monitoring"></a></h3>
+      <p class="desc" data-lang-zh="多端健康监护产品：Android/iOS 原生应用、BLE/Wi-Fi 设备配置工具与自建 OTA 升级后台。" data-lang-en="Multi-platform health monitoring system with native Android/iOS apps, BLE/Wi-Fi device provisioning tools, and self-hosted OTA backend."></p>
+      <div class="tags"><span class="tech-tag">Kotlin</span><span class="tech-tag">Swift</span><span class="tech-tag">BLE</span><span class="tech-tag">FastAPI</span></div>
+    </div>
+
+    <div class="project-card">
+      <h3><a href="projects/03-iot-embedded/ota-system/" data-lang-zh="OTA-QL — 雷达 OTA 管理系统" data-lang-en="OTA-QL — Radar OTA Management"></a></h3>
+      <p class="desc" data-lang-zh="雷达设备远程固件升级的全栈方案，支持 TCP/MQTT 双协议、批量推送与桌面监控工具。" data-lang-en="Full-stack OTA solution for radar devices with TCP/MQTT dual protocol, batch firmware push, and desktop monitoring tools."></p>
+      <div class="tags"><span class="tech-tag">Go</span><span class="tech-tag">MQTT</span><span class="tech-tag">Python</span><span class="tech-tag">Docker</span></div>
+    </div>
+
+    <div class="project-card">
+      <h3><a href="projects/03-iot-embedded/radar-gateway/" data-lang-zh="AWRL6844 雷达网关" data-lang-en="AWRL6844 Radar Gateway"></a></h3>
+      <p class="desc" data-lang-zh="基于 ESP32 的网关系统，将 TI 雷达桥接到 Wi-Fi/TCP，带 Web 管理界面。" data-lang-en="ESP32-based gateway bridging TI radar to Wi-Fi/TCP with a web management interface."></p>
+      <div class="tags"><span class="tech-tag">ESP32</span><span class="tech-tag">Node.js</span><span class="tech-tag">WebSocket</span></div>
+    </div>
+
+    <div class="project-card">
+      <h3><a href="projects/01-ai-platform/codex-bridge/" data-lang-zh="Codex Host Bridge — 远程开发桥接" data-lang-en="Codex Host Bridge — Remote Dev Bridge"></a></h3>
+      <p class="desc" data-lang-zh="Windows WPF 应用，将远程 Codex 客户端（Linux/macOS）桥接到本机 Codex App Server。" data-lang-en="Windows WPF app bridging remote Codex clients (Linux/macOS) to the local Codex App Server."></p>
+      <div class="tags"><span class="tech-tag">C#</span><span class="tech-tag">WPF</span><span class="tech-tag">WebSocket</span></div>
+    </div>
+
+    <div class="project-card">
+      <h3><a href="projects/05-tools/dir-move-tools/" data-lang-zh="DIR-MOVE-TOOLS — 目录迁移工具" data-lang-en="DIR-MOVE-TOOLS — Directory Migration"></a></h3>
+      <p class="desc" data-lang-zh="Windows 桌面工具，用符号链接迁移 AppData 等大目录，带事务恢复与完整性校验。" data-lang-en="Windows desktop tool migrating AppData and large directories via symbolic links, with transaction recovery and integrity verification."></p>
+      <div class="tags"><span class="tech-tag">Python</span><span class="tech-tag">Tkinter</span><span class="tech-tag">PyInstaller</span></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <h2 data-lang-zh="完整项目列表" data-lang-en="All Projects"></h2>
+  <p data-lang-zh="以下为全部 19 个公开项目，按 7 大类别组织。" data-lang-en="All 19 public projects below, organized into 7 categories."></p>
+
+  <h3>🤖 <span data-lang-zh="AI 与平台类" data-lang-en="AI & Platform"></span></h3>
+  <p><a href="projects/01-ai-platform/agentmeshos/" data-lang-zh="AgentMeshOS — 自托管 AI Agent 平台" data-lang-en="AgentMeshOS — Self-Hosted AI Agent Platform"></a><br>
+     <a href="projects/01-ai-platform/codex-bridge/" data-lang-zh="Codex Host Bridge — 远程开发桥接" data-lang-en="Codex Host Bridge — Remote Development Bridge"></a></p>
+
+  <h3>📱 <span data-lang-zh="移动应用类" data-lang-en="Mobile Applications"></span></h3>
+  <p><a href="projects/02-mobile/owlcare/" data-lang-zh="OwlCare — 智能监护系统（含 Android / iOS / 配置工具 / OTA 后台）" data-lang-en="OwlCare — Smart Health Monitoring (Android / iOS / Config Tool / OTA Backend)"></a></p>
+
+  <h3>🔬 <span data-lang-zh="IoT 与嵌入式类" data-lang-en="IoT & Embedded"></span></h3>
+  <p><a href="projects/03-iot-embedded/ota-system/" data-lang-zh="OTA-QL — 雷达 OTA 管理系统" data-lang-en="OTA-QL — Radar OTA Management System"></a><br>
+     <a href="projects/03-iot-embedded/radar-gateway/" data-lang-zh="AWRL6844 雷达网关" data-lang-en="AWRL6844 Radar Gateway"></a><br>
+     <a href="projects/03-iot-embedded/ti-radar-dev/" data-lang-zh="TI 雷达开发平台（历史参考）" data-lang-en="TI Radar Development Platform (Historical Reference)"></a></p>
+
+  <h3>🌐 <span data-lang-zh="Web 与业务系统类" data-lang-en="Web & Business Systems"></span></h3>
+  <p><a href="projects/04-web-business/owl-website/" data-lang-zh="Owl Website — 官网" data-lang-en="Owl Website — Official Site"></a><br>
+     <a href="projects/04-web-business/owl-front-mock/" data-lang-zh="OwlFront Mock — 前端演示" data-lang-en="OwlFront Mock — Frontend Demo"></a><br>
+     <a href="projects/04-web-business/server-move/" data-lang-zh="Server Move — 服务器迁移" data-lang-en="Server Move — Server Migration"></a><br>
+     <a href="projects/04-web-business/codex-mobile-control/" data-lang-zh="Codex Mobile Control — 移动编码工作空间" data-lang-en="Codex Mobile Control — Mobile Coding Workspace"></a></p>
+
+  <h3>🔧 <span data-lang-zh="开发工具类" data-lang-en="Developer Tools"></span></h3>
+  <p><a href="projects/05-tools/dir-move-tools/" data-lang-zh="DIR-MOVE-TOOLS — 目录迁移工具" data-lang-en="DIR-MOVE-TOOLS — Directory Migration Tool"></a><br>
+     <a href="projects/05-tools/pdf-md-tools/" data-lang-zh="PDF-MD-TOOLS — 文档转换工具" data-lang-en="PDF-MD-TOOLS — Document Conversion Tool"></a><br>
+     <a href="projects/05-tools/icon-data/" data-lang-zh="Icon-data — SVG 图标库下载" data-lang-en="Icon-data — SVG Icon Library Downloader"></a><br>
+     <a href="projects/05-tools/usb-mic-mute/" data-lang-zh="USB-MIC-MUTE — USB 静音控制" data-lang-en="USB-MIC-MUTE — USB Mic Mute Control"></a><br>
+     <a href="projects/05-tools/heic-tools/" data-lang-zh="HEIC-TOOLS — HEIC 查看与转换" data-lang-en="HEIC-TOOLS — HEIC Viewer & Converter"></a></p>
+
+  <h3>📦 <span data-lang-zh="数据与字典类" data-lang-en="Data & Dictionaries"></span></h3>
+  <p><a href="projects/06-data/fhir-coding-dictionary/" data-lang-zh="FHIR 医疗编码字典" data-lang-en="FHIR Coding Dictionary"></a></p>
+
+  <h3>🎮 <span data-lang-zh="其他项目" data-lang-en="Other Projects"></span></h3>
+  <p><a href="projects/07-others/game-snake/" data-lang-zh="Game Snake — 微信小游戏" data-lang-en="Game Snake — WeChat Mini Game"></a><br>
+     <a href="projects/07-others/music-musescore/" data-lang-zh="Music MuseScore — BGM 批量生成" data-lang-en="Music MuseScore — BGM Batch Generator"></a><br>
+     <a href="projects/07-others/resume-evidence/" data-lang-zh="Resume Evidence — 简历证据包" data-lang-en="Resume Evidence — Resume & Evidence Pack"></a></p>
+</div>
+
+<div class="section">
+  <h2 data-lang-zh="技术栈" data-lang-en="Tech Stack"></h2>
+  <p><span class="tech-tag">Python</span><span class="tech-tag">Kotlin</span><span class="tech-tag">Swift</span><span class="tech-tag">Go</span><span class="tech-tag">JavaScript</span><span class="tech-tag">TypeScript</span><span class="tech-tag">C/C++</span><span class="tech-tag">C#</span><span class="tech-tag">PowerShell</span></p>
+  <p><span class="tech-tag">FastAPI</span><span class="tech-tag">Express</span><span class="tech-tag">React</span><span class="tech-tag">Vue</span><span class="tech-tag">Jetpack Compose</span><span class="tech-tag">SwiftUI</span><span class="tech-tag">WPF</span></p>
+  <p><span class="tech-tag">Docker</span><span class="tech-tag">Nomad</span><span class="tech-tag">GitHub Actions</span><span class="tech-tag">Nginx</span><span class="tech-tag">Tailscale</span></p>
+  <p><span class="tech-tag">ESP32</span><span class="tech-tag">TI Radar</span><span class="tech-tag">BLE</span><span class="tech-tag">SQLite</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Redis</span></p>
+</div>
+
+<div class="section">
+  <h2 data-lang-zh="关于我" data-lang-en="About Me"></h2>
+  <p data-lang-zh="我专注 AI 辅助开发（Vibe Coding），使用 Codex 等工具快速理解陌生代码库、高效构建全栈应用、打通软硬件边界并部署生产级系统。项目覆盖嵌入式、云平台、移动端等多个领域。" data-lang-en="I specialize in AI-assisted development (Vibe Coding), using Codex and other tools to rapidly understand unfamiliar codebases, build full-stack applications efficiently, bridge hardware and software, and deploy production-ready systems."></p>
+  <p><a href="docs/about.html" data-lang-zh="更多详情 →" data-lang-en="Read more →"></a></p>
+</div>
+
+<div class="section">
+  <h2 data-lang-zh="联系方式" data-lang-en="Contact"></h2>
+  <p>📧 hhtbing@foxmail.com &nbsp;|&nbsp; 📍 <span data-lang-zh="深圳" data-lang-en="Shenzhen"></span></p>
+  <p data-lang-zh="合作方式：全职 / 合同 / 远程 / 项目制" data-lang-en="Work Mode: Full-time / Contract / Remote / Project-based"></p>
+</div>
+
+<footer>
+  <span data-lang-zh="最后更新：2026 年 9 月" data-lang-en="Last updated: September 2026"></span>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+</body>
+</html>
