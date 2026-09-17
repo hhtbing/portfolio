@@ -14,39 +14,32 @@
 </div>
 
 <div class="breadcrumb">
-  <a href="../../index.html">Benson Portfolio</a> /
-  <span data-lang-zh="AI 与平台" data-lang-en="AI &amp; Platform"></span> /
-  <span>AgentMeshOS — 自托管 AI Agent 平台</span>
+  <a href="../../index.html">Benson</a> / <a href="projects/01-ai-platform/"><span data-lang-zh="AI 与平台" data-lang-en="AI &amp; Platform"></span></a> / <span>AgentMeshOS — 自托管 AI Agent 平台</span>
 </div>
 
 <div class="hero">
   <h1 data-lang-zh="AgentMeshOS — 自托管 AI Agent 平台" data-lang-en="AgentMeshOS — Self-Hosted AI Agent Platform"></h1>
-  <p class="tagline" data-lang-zh="面向个人和小团队的自托管 AI Agent 运行时平台，把分散计算节点、模型能力、任务调度与成果交付组织成可追溯的工作链。" data-lang-en="Self-hosted AI agent runtime platform for individuals and small teams, organizing distributed compute nodes, model capabilities, task scheduling, and artifact delivery into a traceable work chain."></p>
-  <div class="tags"><span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Nomad</span><span class="tech-tag">Docker</span><span class="tech-tag">Tailscale</span></div>
 </div>
 
 <div class="section">
-  <h2 data-lang-zh="核心功能" data-lang-en="Core Features"></h2>
+  <h2 data-lang-zh="概览" data-lang-en="Overview"></h2>
+  <p data-lang-zh="面向个人和小团队的自托管 AI Agent 运行时平台，把分散计算节点、模型能力、任务调度与成果交付组织成可追溯的工作链。" data-lang-en="Self-hosted AI agent runtime platform for individuals and small teams, organizing distributed compute nodes, model capabilities, task scheduling, and artifact delivery into a traceable work chain."></p>
+</div>
+<div class="section">
+  <h2 data-lang-zh="核心特性" data-lang-en="Core Features"></h2>
   <ul><li data-lang-zh="分布式任务调度：基于 Nomad 的任务分发、节点能力匹配、取消与恢复" data-lang-en="Distributed task scheduling: Nomad-based distribution, node capability matching, cancellation and recovery"></li><li data-lang-zh="AI BOSS 智能编排：自然语言需求、自动生成任务依赖图、智能选择 Worker" data-lang-en="AI BOSS orchestration: natural language requirements, dependency graph generation, intelligent worker selection"></li><li data-lang-zh="统一成果管理：SHA-256 文件级追溯、版本控制与回滚" data-lang-en="Unified artifact management: SHA-256 traceability, versioning and rollback"></li><li data-lang-zh="应用中心：应用注册、生命周期管理、标准化输入输出与自动归档" data-lang-en="Application center: registration, lifecycle, standardized I/O and auto archiving"></li><li data-lang-zh="安全边界：Worker 不接触云盘凭据，模型只能调用已注册能力" data-lang-en="Security boundaries: workers never touch cloud-storage credentials; models call only registered capabilities"></li></ul>
 </div>
-
 <div class="section">
   <h2 data-lang-zh="技术栈" data-lang-en="Tech Stack"></h2>
   <div class="tags"><span class="tech-tag">Python 3.11+</span><span class="tech-tag">FastAPI</span><span class="tech-tag">SQLite + FTS5</span><span class="tech-tag">Pydantic</span><span class="tech-tag">Docker</span><span class="tech-tag">Nomad</span><span class="tech-tag">Tailscale</span><span class="tech-tag">Nginx</span><span class="tech-tag">Cloudreve</span></div>
 </div>
-
 <div class="section">
-  <h2 data-lang-zh="仓库结构" data-lang-en="Repository Structure"></h2>
-  <ul><li data-lang-zh="ai-runtime/ — AI Runtime 服务、存储与应用" data-lang-en="ai-runtime/ — AI Runtime service, storage and apps"></li><li data-lang-zh="tools/ — Console、Docs、Gateway、Worker 等组件" data-lang-en="tools/ — Console, Docs, Gateway, Worker components"></li><li data-lang-zh="scripts/ — 节点接入、部署与 CI 脚本" data-lang-en="scripts/ — node onboarding, deployment and CI scripts"></li><li data-lang-zh="docs/ — 架构、部署、安全与路线图" data-lang-en="docs/ — architecture, deployment, security and roadmap"></li><li data-lang-zh="nomad/ — Nomad 任务定义与夹具" data-lang-en="nomad/ — Nomad job definitions and fixtures"></li></ul>
-</div>
-
-<div class="section">
-  <h2 data-lang-zh="说明" data-lang-en="Notes"></h2>
-  <p data-lang-zh="生产环境运行，支持多节点协作与全链路审计；当前定位为单用户受控执行平台。" data-lang-en="Runs in production with multi-node collaboration and full audit trail; positioned as a single-user controlled execution platform."></p>
+  <h2 data-lang-zh="状态" data-lang-en="Status"></h2>
+  <p data-lang-zh="生产环境运行，多节点协作，全链路审计。" data-lang-en="Running in production with multi-node collaboration and full audit trail."></p>
 </div>
 
 <footer>
-  <a href="../../index.html">&larr; <span data-lang-zh="返回项目列表" data-lang-en="Back to all projects"></span></a>
+  <a href="../../index.html">&larr; <span data-lang-zh="返回项目列表" data-lang-en="Back to projects"></span></a>
 </footer>
 
 <script src="../../assets/js/i18n.js"></script>
