@@ -1,4 +1,4 @@
-> [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
+> [🏠 返回主页](https://github.com/hhtbing/blob/main/README.md) | 中文 | [**English Documentation**](./README_en.md)
 
 # 目录迁移工具 — Windows 批量文件迁移
 

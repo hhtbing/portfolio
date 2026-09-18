@@ -1,4 +1,4 @@
-> [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
+> [🏠 返回主页](https://github.com/hhtbing/blob/main/README.md) | 中文 | [**English Documentation**](./README_en.md)
 
 # OwlFront Mock — 护理系统演示前端
 

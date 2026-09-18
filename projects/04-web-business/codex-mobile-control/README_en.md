@@ -1,4 +1,4 @@
-> [🏠 Back to Profile](https://github.com/hhtbing) | [**中文文档**](./README.md) | English
+> [🏠 Back to Profile](https://github.com/hhtbing/blob/main/README_en.md) | [**中文文档**](./README.md) | English
 
 # Codex Mobile Control - Mobile Coding Workspace
 
