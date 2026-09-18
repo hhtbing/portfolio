@@ -1,4 +1,4 @@
-> [🏠 返回主页](https://github.com/hhtbing/blob/main/README.md) | 中文 | [**English Documentation**](./README_en.md)
+> [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
 
 # AWRL6844 雷达网关系统 — 双 ESP32 架构物联网网关
 
