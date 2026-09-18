@@ -1,4 +1,4 @@
-> 🏠 [Back to Homepage](https://github.com/hhtbing/hhtbing/blob/main/README_en.md) | [中文](./README.md) / **English**
+> 🏠 [Back to Homepage](https://github.com/hhtbing) | [中文](./README.md) / **English**
 
 # Music MuseScore - BGM Batch Generator
 
