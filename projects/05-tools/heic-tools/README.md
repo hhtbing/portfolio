@@ -1,19 +1,37 @@
-# HEIC-TOOLS — HEIC 图像查看与转换 / HEIC-TOOLS — HEIC Image Viewer & Converter
+# HEIC-TOOLS - HEIC Image Viewer & Converter
 
-> Windows 平台 HEIC 图像格式处理工具集，包含查看器与批量转换功能。
+![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20WPF-purple)
 
-> HEIC image toolset for Windows including a viewer and batch conversion.
+## 📋 Project Overview
 
-- 类别 Category：开发工具 / Developer Tools
-- 状态 Status：包含 heic-viewer 查看器与测试文件集。 / Includes heic-viewer and a test file set.
-- 技术栈 Tech Stack：Python、WPF、HEIC decoding
+Windows desktop tool for viewing and converting HEIC (High Efficiency Image Container) format images from Apple devices.
 
-## 🌐 交互式双语页面 / Interactive Bilingual Page
+**Project Type:** Desktop Utility  
+**Platform:** Windows
 
-点击打开可切换 **中文 / English** 的完整项目页面：
-Open the full project page with **中文 / English** switching:
+## ⚡ Features
 
-👉 [https://hhtbing.github.io/portfolio/projects/05-tools/heic-tools/](https://hhtbing.github.io/portfolio/projects/05-tools/heic-tools/)
+### heic-viewer - Image Viewer
+- File browsing (single file or batch folder)
+- Image viewing with adaptive window sizing
+- Image operations (zoom, pan)
+- File navigation (previous/next, arrow keys)
+- Format conversion (JPG/PNG)
+- Batch conversion support
+
+### heic-file - Test Files
+- Sample HEIC files for testing viewer functionality
+
+## 🎯 Use Case
+
+Windows users who need to view and process HEIC format photos taken with iPhone/iPad without format conversion.
+
+## 🛠️ Tech Stack
+
+- Python
+- WPF (Windows Presentation Foundation)
+- HEIC decoding libraries
 
 ---
-[返回作品集 / Back to Portfolio](https://hhtbing.github.io/portfolio/)
+
+*Utility demonstrating image format handling and Windows desktop development.*
