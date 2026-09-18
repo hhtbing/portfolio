@@ -1,141 +1,143 @@
-# OwlCare - Smart Health Monitoring System
+# OwlCare — 智能监护系统
 
-![Status](https://img.shields.io/badge/Status-Production-success)
-![Tech](https://img.shields.io/badge/Tech-Android%20%7C%20iOS%20%7C%20BLE-green)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+![状态](https://img.shields.io/badge/状态-生产环境-success)
+![技术](https://img.shields.io/badge/技术-Android%20%7C%20iOS%20%7C%20BLE-green)
 
-OwlCare is a comprehensive multi-platform health monitoring product repository, centrally maintaining Android, iOS, device configuration tools, proxy bridge tools, upgrade release backend, CI/CD workflows, and project documentation.
+## 📋 项目概览
 
-This repository is oriented toward actual product delivery, not a single application template.
+OwlCare 是一个综合性多平台健康监护产品仓库，集中维护 Android、iOS、设备配置工具、代理桥接工具、升级发布后台、CI/CD 工作流和项目文档。
 
-**Project Type:** Multi-Platform Mobile Application  
-**Development Period:** 2023-Present  
-**Team Size:** Team Project  
-**Project Status:** Production with Active Users
+本仓库面向实际产品交付，而非单一应用模板。
 
-## 🎯 System Components
+**项目类型：** 多平台移动应用  
+**开发周期：** 2023 年至今  
+**团队规模：** 团队项目  
+**项目状态：** 生产环境，有活跃用户
 
-| Module | Path | Tech Stack | Main Responsibilities |
-|--------|------|-----------|----------------------|
-| OwlCare Android | `project-code/Android_OwlCare_google_play` | Kotlin, Jetpack Compose, Hilt | Main Android app with login, monitoring, alerts, radar, sleep, settings, device config, and Google Play updates |
-| OwlCare iOS | `project-code/ios-owlCare-update` | Swift, UIKit, CocoaPods | iPhone & Apple Watch clients with cross-platform interaction |
-| ConfigureTool | `project-code/ConfigureTool` | Kotlin, Jetpack Compose, BLE/Wi-Fi SDK | Independent device configuration tool for QR scanning, BLE discovery, and Wi-Fi provisioning |
-| OwlProxyBridge | `project-code/OwlProxyBridge` | Java, Android SDK | Android proxy bridge tool; formal builds via GitHub Actions |
-| OwlCare Update Hub | `project-code/OwlCareUpdateHub` | Python, FastAPI, Uvicorn, Docker | APK release, self-hosted updates, Google Play handoff, sensitive release assets, and audit management |
+## 🎯 系统组件
 
-## 🏗️ Product & Release Architecture
+| 模块 | 路径 | 技术栈 | 主要职责 |
+|------|------|--------|---------|
+| OwlCare Android | `project-code/Android_OwlCare_google_play` | Kotlin, Jetpack Compose, Hilt | Android 主应用，包含登录、监护、告警、雷达、睡眠、设置、设备配置和 Google Play 更新 |
+| OwlCare iOS | `project-code/ios-owlCare-update` | Swift, UIKit, CocoaPods | iPhone 和 Apple Watch 客户端，支持跨平台交互 |
+| ConfigureTool | `project-code/ConfigureTool` | Kotlin, Jetpack Compose, BLE/Wi-Fi SDK | 独立设备配置工具，支持二维码扫描、BLE 发现和 Wi-Fi 配网 |
+| OwlProxyBridge | `project-code/OwlProxyBridge` | Java, Android SDK | Android 代理桥接工具，通过 GitHub Actions 正式构建 |
+| OwlCare Update Hub | `project-code/OwlCareUpdateHub` | Python, FastAPI, Uvicorn, Docker | APK 发布、自托管更新、Google Play 交接、敏感发布资产和审计管理 |
+
+## 🏗️ 产品与发布架构
 
 ```
-User → OwlCare Android/iOS
+用户 → OwlCare Android/iOS
          ↓
-    Business API
+    业务 API
          ↓
   Google Play / Update Hub
          ↓
-    Device (BLE/Wi-Fi)
+    设备（BLE/Wi-Fi）
 ```
 
-Current Android main app uses package name `com.wisefido.owlmonitor`, with Google Play as the primary release channel. Update Hub handles self-hosted updates, release information sync, backend configuration, and audit responsibilities.
+当前 Android 主应用使用包名 `com.wisefido.owlmonitor`，以 Google Play 作为主要发布渠道。Update Hub 处理自托管更新、发布信息同步、后台配置和审计职责。
 
-## ⚡ Core Features
+## ⚡ 核心特性
 
-### Android Application
-- Native Material 3 design with Jetpack Compose
-- Real-time monitoring dashboard
-- Alert system with FCM push notifications
-- Radar data visualization
-- Sleep quality analysis
-- Device configuration and management
-- Biometric authentication
-- Google Play in-app updates
+### Android 应用
+- 原生 Material 3 设计，使用 Jetpack Compose
+- 实时监护仪表板
+- 告警系统，带 FCM 推送通知
+- 雷达数据可视化
+- 睡眠质量分析
+- 设备配置和管理
+- 生物识别认证
+- Google Play 应用内更新
 
-### iOS Application
-- Native UIKit interface
-- iPhone and Apple Watch support
-- HealthKit integration
-- Real-time data synchronization
-- Push notifications
+### iOS 应用
+- 原生 UIKit 界面
+- iPhone 和 Apple Watch 支持
+- HealthKit 集成
+- 实时数据同步
+- 推送通知
 
-### Device Configuration
-- QR code scanning for device discovery
-- BLE device discovery and pairing
-- Wi-Fi provisioning
-- Device parameter configuration
+### 设备配置
+- 二维码扫描设备发现
+- BLE 设备发现和配对
+- Wi-Fi 配网
+- 设备参数配置
 
-### OTA System
-- Self-hosted update backend
-- APK version management
-- Release approval workflow
-- Update statistics and audit logs
+### OTA 系统
+- 自托管更新后台
+- APK 版本管理
+- 发布审批流程
+- 更新统计和审计日志
 
-## 🛠️ Tech Stack Details
+## 🛠️ 技术栈详情
 
 ### Android
 - Android Gradle Plugin + Gradle Kotlin DSL
 - Kotlin, Jetpack Compose, Material 3
-- Hilt dependency injection
+- Hilt 依赖注入
 - Retrofit, OkHttp, SSE, Kotlin Serialization
 - DataStore, Security Crypto, Biometric
-- BLE, Wi-Fi provisioning SDK
+- BLE, Wi-Fi 配网 SDK
 - `compileSdk 35`, `targetSdk 35`, `minSdk 26`, JDK 17
 
 ### iOS
 - Swift with UIKit
-- CocoaPods dependency management
+- CocoaPods 依赖管理
 - Moya, Kingfisher, SnapKit
-- iPhone and Apple Watch projects
-- Minimum platform iOS 18
+- iPhone 和 Apple Watch 项目
+- 最低平台 iOS 18
 
 ### Update Hub
 - FastAPI + Uvicorn
-- Native HTML/CSS/JavaScript admin backend
-- JSON and mounted directory persistence
-- Docker single-container deployment
-- Multi-architecture images via GitHub Container Registry
+- 原生 HTML/CSS/JavaScript 管理后台
+- JSON 和挂载目录持久化
+- Docker 单容器部署
+- 通过 GitHub Container Registry 提供多架构镜像
 
-## 💡 Design Decisions
+## 💡 设计决策
 
-This combination extends the repository's existing architecture:
-- Mobile maintains native experience and device capabilities
-- Release backend uses lightweight Python service to reduce deployment complexity
-- Independent tools separated by device access boundaries
-- Avoids coupling all capabilities into the main app
+此组合扩展了仓库的现有架构：
+- 移动端保持原生体验和设备能力
+- 发布后台使用轻量级 Python 服务以降低部署复杂度
+- 独立工具按设备访问边界分离
+- 避免将所有能力耦合到主应用
 
-## 📚 Quick Start
+## 📚 快速开始
 
-### Environment Requirements
+### 环境要求
 - Git, JDK 17
-- Android Studio or available Android SDK
-- macOS + Xcode + CocoaPods (iOS only)
-- Python 3.11+ (Update Hub local development)
-- Docker (Update Hub verification/deployment)
+- Android Studio 或可用的 Android SDK
+- macOS + Xcode + CocoaPods（仅限 iOS）
+- Python 3.11+（Update Hub 本地开发）
+- Docker（Update Hub 验证/部署）
 
-### Clone Repository
+### 克隆仓库
 ```bash
 git clone [repository-url]
 cd OwlMonitor_app
 ```
 
-### Build Android
+### 构建 Android
 ```bash
 cd project-code/Android_OwlCare_google_play
 ./gradlew assembleDebug
 ```
 
-### Build iOS
+### 构建 iOS
 ```bash
 cd project-code/ios-owlCare-update
 pod install
 open OwlCare.xcworkspace
 ```
 
-## 🔗 Release Channels
+## 🔗 发布渠道
 
-- **Google Play:** Primary distribution channel
-- **Update Hub:** Self-hosted updates and testing
-- **GitHub Actions:** Automated builds and releases
+- **Google Play：** 主要分发渠道
+- **Update Hub：** 自托管更新和测试
+- **GitHub Actions：** 自动化构建和发布
 
 ---
 
-*This is a production mobile health monitoring system demonstrating native app development, BLE integration, and self-hosted OTA management.*
+*这是一个生产环境的移动健康监护系统，展示了原生应用开发、BLE 集成和自托管 OTA 管理。*

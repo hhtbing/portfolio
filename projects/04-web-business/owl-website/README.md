@@ -1,38 +1,18 @@
-# Owl Website - Official Website & Marketing
+# Owl Website — 官网
 
-![Tech](https://img.shields.io/badge/Tech-Node.js%20%7C%20Express%20%7C%20Docker-blue)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-WiseFido official website and marketing site with CMS backend for content management.
+Owl 产品官方网站。
 
-**Project Type:** Corporate Website  
-**Tech Stack:** Node.js, Express, Docker, Nginx
+**项目类型：** 官网  
+**项目状态：** 已上线
 
-## ⚡ Core Features
+## 📚 更多信息
 
-- Static page serving
-- Node/Express API backend
-- JWT authentication
-- CMS page editor
-- Page version save/rollback
-- Image upload
-- Access statistics
-- SMTP configuration
-- Admin operation workflow
-
-## 🛠️ Tech Stack
-
-- Node.js + Express
-- JWT authentication
-- Docker deployment
-- Nginx reverse proxy
-- Supervisor process management
-
-## 🔗 Deployment
-
-Uses Docker, Nginx, and Supervisor to organize frontend/backend operations with API rate limiting, cache control, health checks, and log collection.
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Corporate website demonstrating web development and content management capabilities.*
+*Owl 产品官方网站。*

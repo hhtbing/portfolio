@@ -1,30 +1,18 @@
-# PDF-MD-TOOLS - Document Conversion Tool
+# PDF-MD-TOOLS — 文档转换工具
 
-![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20OCR-orange)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Batch conversion tool for documents and images to semantic Markdown format.
+PDF 和 Markdown 文档转换工具，支持双向转换和批量处理。
 
-**Project Type:** Desktop Utility  
-**Tech Stack:** Python, OCR, Markdown processing
+**项目类型：** 文档工具  
+**项目状态：** 稳定版本
 
-## ⚡ Features
+## 📚 更多信息
 
-- Multi-format document parsing
-- OCR for image-based PDFs
-- Semantic Markdown generation
-- Image extraction
-- Checkpoint and resume support
-- Windows EXE packaging
-
-## 🛠️ Tech Stack
-
-- Python
-- OCR libraries
-- Markdown processing
-- PyInstaller
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Utility demonstrating document processing and OCR integration capabilities.*
+*PDF 和 Markdown 文档双向转换工具。*

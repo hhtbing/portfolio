@@ -1,31 +1,18 @@
-# Icon-data - SVG Icon Library Downloader
+# Icon-data — 图标数据管理
 
-![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20GUI-green)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Powerful SVG icon library batch download tool supporting multiple mainstream icon libraries with GUI and embedded SVG icon system.
+图标数据管理工具，用于项目图标资源的组织和管理。
 
-**Version:** v4.0.1  
-**Project Type:** Desktop Utility
+**项目类型：** 资源管理工具  
+**项目状态：** 活跃开发
 
-## ⚡ Features
+## 📚 更多信息
 
-- Multi-platform icon library support
-- Batch download functionality
-- Proxy support
-- Connectivity testing
-- Index generation
-- GUI interface
-- Windows packaging
-
-## 🛠️ Tech Stack
-
-- Python
-- GUI framework
-- HTTP/HTTPS client
-- SVG processing
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Tool demonstrating GUI application development and web scraping capabilities.*
+*项目图标资源管理工具。*

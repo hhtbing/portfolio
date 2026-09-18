@@ -1,25 +1,18 @@
-# Server Migration - Deployment Solutions
+# Server Move — 服务器迁移
 
-![Tech](https://img.shields.io/badge/Tech-Docker%20%7C%20Nginx-orange)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Server migration configurations and deployment solutions for multiple independent website migrations.
+服务器迁移工具和文档，用于生产环境服务器迁移。
 
-**Project Type:** Infrastructure Configuration  
-**Tech Stack:** Docker, Nginx, Shell scripts
+**项目类型：** 运维工具  
+**项目状态：** 已完成
 
-## 🏗️ Structure
+## 📚 更多信息
 
-Organized for multiple independent website migrations. Each website owns its container, reverse proxy, persistent data directory, certificate directory, and verification notes under `sites/<site-name>/`.
-
-## 🛠️ Tech Stack
-
-- Docker
-- Nginx
-- SSL/TLS certificates
-- Shell scripts
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Infrastructure project demonstrating server migration and deployment expertise.*
+*生产环境服务器迁移工具。*

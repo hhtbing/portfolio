@@ -1,27 +1,18 @@
-# Codex Mobile Control - Mobile Coding Workspace
+# Codex Mobile Control — 移动端控制
 
-![Tech](https://img.shields.io/badge/Tech-CloudCLI%20%7C%20Web-purple)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Codex Mobile Control packages a browser-accessible AI coding workspace for desktop and mobile use, based on CloudCLI.
+移动端控制 Codex 开发环境的工具。
 
-**Project Type:** Development Tool  
-**Tech Stack:** CloudCLI, Web technologies
+**项目类型：** 移动开发工具  
+**项目状态：** 开发中
 
-## ⚡ Features
+## 📚 更多信息
 
-- Browser-accessible coding environment
-- Mobile device support
-- Workspace policy management
-- Reverse-proxy deployment
-
-## 🛠️ Tech Stack
-
-- CloudCLI
-- Web-based interface
-- Reverse proxy deployment
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Tool demonstrating mobile-accessible development environment capabilities.*
+*移动端控制 Codex 开发环境。*

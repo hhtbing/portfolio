@@ -1,27 +1,18 @@
-# USB-MIC-MUTE - USB Microphone Mute Control
+# USB-MIC-MUTE — USB 麦克风控制
 
-![Tech](https://img.shields.io/badge/Tech-C%20%7C%20USB%20HID-red)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-USB microphone mute control mapped to keyboard shortcut (Right Ctrl). Targets USB headset VID_0D8C&PID_0014.
+USB 麦克风静音控制工具，支持快捷键和系统托盘控制。
 
-**Project Type:** Hardware Control Tool  
-**Tech Stack:** C, USB HID protocol
+**项目类型：** 系统工具  
+**项目状态：** 稳定版本
 
-## ⚡ Features
+## 📚 更多信息
 
-- USB HID Consumer Control interface handling
-- Keyboard shortcut mapping
-- No interference with USB audio interface
-- Low-level hardware control
-
-## 🛠️ Tech Stack
-
-- C programming
-- USB HID protocol
-- Windows driver interface
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Hardware control tool demonstrating USB protocol and low-level system integration.*
+*USB 麦克风快捷静音控制工具。*

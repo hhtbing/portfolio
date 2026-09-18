@@ -1,138 +1,151 @@
-# OTA-QL - Radar OTA Management System
+# OTA-QL — 雷达 OTA 管理系统
 
-![Status](https://img.shields.io/badge/Status-Production-success)
-![Tech](https://img.shields.io/badge/Tech-Go%20%7C%20MQTT%20%7C%20TCP-red)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+![状态](https://img.shields.io/badge/状态-生产环境-success)
+![技术](https://img.shields.io/badge/技术-Go%20%7C%20MQTT%20%7C%20TCP-red)
 
-OTA-QL is a complete OTA (Over-The-Air) firmware upgrade management system for radar devices, supporting TCP and MQTT(S) remote firmware upgrade protocols.
+## 📋 项目概览
 
-**Current Version:** V20.1  
-**Project Type:** IoT Management System  
-**Development Period:** 2024-2026  
-**Project Status:** Production with 500+ Devices
+OTA-QL 是面向雷达设备的完整 OTA（空中升级）固件管理系统，支持 TCP 和 MQTT(S) 远程固件升级协议。
 
-## ⚡ Core Features
+**当前版本：** V20.1  
+**项目类型：** 物联网管理系统  
+**开发周期：** 2024-2026  
+**项目状态：** 生产环境，管理 500+ 设备
 
-### 1. Dual Protocol Support
-- TCP V2 protocol for direct device connection
-- MQTT(S) protocol with broker support
-- Automatic protocol switching and fallback
+## ⚡ 核心特性
 
-### 2. Batch Firmware Management
-- Support up to 500 devices batch push
-- Worker pool with 10 concurrent uploads
-- Push pacer flow control (max 15 concurrent downloads)
-- Automatic queueing for large batches
+### 1. 双协议支持
+- TCP V2 协议，直连设备
+- MQTT(S) 协议，支持 Broker
+- 自动协议切换和回退
 
-### 3. Desktop Monitoring Tool
-- Real-time device list with virtual scrolling
-- OTA progress tracking and status display
-- Live firmware burning logs
-- Batch operation support
+### 2. 批量固件管理
+- 支持最多 500 设备批量推送
+- Worker 池，10 并发上传
+- Push pacer 流控（最多 15 并发下载）
+- 大批次自动排队
 
-### 4. Security Protection
-- Device blacklist management
-- Automatic device deregistration
-- Interception log persistence
-- Gateway address whitelist
+### 3. 桌面监控工具
+- 实时设备列表，虚拟滚动
+- OTA 进度追踪和状态显示
+- 实时固件烧录日志
+- 批量操作支持
 
-### 5. Web Management Panel
-- Device registration and management
-- Firmware version control
-- OTA push interface
-- Real-time progress monitoring
-- User authentication and authorization
+### 4. 安全保护
+- 设备黑名单管理
+- 自动设备注销
+- 拦截日志持久化
+- 网关地址白名单
 
-## 🏗️ System Architecture
+### 5. Web 管理面板
+- 设备注册和管理
+- 固件版本控制
+- OTA 推送接口
+- 实时进度监控
+- 用户认证和授权
 
-### Core Components
+## 🏗️ 系统架构
 
-| Component | Technology | Responsibility |
-|-----------|-----------|---------------|
-| Go Server | Go + cmux | Device gateway, HTTPS API, MQTT broker |
-| Web Panel | HTML/CSS/JS | Management interface |
-| Monitor Tool | Python/PySide6 | Desktop monitoring and batch operations |
-| Device Protocol | TCP/MQTT + Protobuf | Device communication |
+### 核心组件
 
-### Data Flow
+| 组件 | 技术 | 职责 |
+|------|------|------|
+| Go Server | Go + cmux | 设备网关、HTTPS API、MQTT broker |
+| Web Panel | HTML/CSS/JS | 管理界面 |
+| Monitor Tool | Python/PySide6 | 桌面监控和批量操作 |
+| Device Protocol | TCP/MQTT + Protobuf | 设备通信 |
+
+### 数据流
 
 ```
-Device (TCP/MQTT)
+设备（TCP/MQTT）
       ↓
-  cmux Gateway
+  cmux 网关
       ↓
-  OTA Service
+  OTA 服务
       ↓
-  Firmware Storage
+  固件存储
       ↓
-  Web Panel / Monitor
+  Web 面板 / 监控工具
 ```
 
-## 💡 Technical Highlights
+## 💡 技术亮点
 
-### 1. High Concurrency Handling
-- Worker pool for parallel firmware push
-- Flow control to prevent network congestion
-- Incremental polling API for efficient updates
+### 1. 高并发处理
+- 流控防止网络拥塞
+- Worker 池管理并发上传
+- 队列机制处理大批次
 
-### 2. Reliability
-- Automatic retry on download failure
-- Transaction-based OTA process
-- Progress tracking and recovery
+### 2. 协议灵活性
+- TCP 和 MQTT 双协议
+- 自动切换和回退
+- Protobuf 高效序列化
 
-### 3. User Experience
-- Virtual scrolling for 500+ device lists
-- Real-time progress updates
-- Dual-view summary and detail panels
+### 3. 生产级监控
+- 实时设备状态
+- 进度追踪
+- 日志持久化
+- 安全防护
 
-## 🛠️ Tech Stack
+## 🛠️ 技术栈
 
-**Backend:**
-- Go (HTTP/TCP/MQTT server)
-- Protobuf (Protocol definition)
-- cmux (Protocol multiplexing)
+**后端：**
+- Go 1.21+
+- cmux（多路复用）
+- MQTT broker
+- Protobuf
 
-**Frontend:**
-- HTML5/CSS3/JavaScript
-- Native Web APIs
+**前端：**
+- HTML/CSS/JavaScript
+- 原生 Web 界面
 
-**Desktop Tool:**
+**监控工具：**
 - Python 3.11+
-- PySide6 (Qt for Python)
-- PyInstaller (Windows EXE packaging)
+- PySide6
+- 虚拟滚动列表
 
-**Infrastructure:**
-- Docker multi-stage build
-- Nginx reverse proxy
-- GitHub Actions CI/CD
+**基础设施：**
+- Docker
+- Nginx
+- SQLite
 
-## 📊 Version Milestones
-
-- **V20.1:** Server and Monitor unified upgrade, version dynamic pass-through
-- **V20.0:** Monitor proxy fix, unified version upgrade
-- **V19.0:** Backup gateway whitelist correction, popup UX optimization
-- **V16.0:** 2000-device batch push optimization
-- **V15.9:** MQTT/TCP disconnect popup fix
-- **V14.7:** ETag cache + version unification
-- **V13.8:** Security protection enhancement
-
-## 📚 Repository Structure
+## 📚 仓库结构
 
 ```
-OTA-QL/
-├── project-code/
-│   ├── server/              # Go backend service
-│   ├── firmware/            # Device firmware directory
-│   └── scripts/             # Local burning scripts
-├── 项目文档/                 # Project documentation
-└── 知识库/                  # Technical knowledge base
+ota/
+├── server/          # Go OTA 服务
+├── web/             # Web 管理面板
+├── monitor/         # 桌面监控工具
+├── device/          # 设备端协议
+└── docs/            # 文档和部署指南
 ```
 
-## 🔗 Production Deployment
+## 🚀 快速开始
 
-System deployed via Docker with automatic health checks, metrics collection, and log aggregation. Supports multi-architecture builds for different deployment environments.
+### 构建 Go 服务
+
+```bash
+cd server
+go build -o ota-server
+./ota-server
+```
+
+### 运行监控工具
+
+```bash
+cd monitor
+pip install -r requirements.txt
+python main.py
+```
+
+## 🔗 相关链接
+
+- Go OTA 服务：设备网关和管理 API
+- 桌面监控工具：批量操作和实时监控
+- Web 管理面板：固件版本和设备管理
 
 ---
 
-*This is a production OTA system managing hundreds of radar devices with proven reliability and scalability.*
+*这是一个生产环境的 OTA 管理系统，展示了高并发处理、双协议支持和批量固件管理能力。*

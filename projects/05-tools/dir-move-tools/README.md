@@ -1,46 +1,36 @@
-# DIR-MOVE-TOOLS - Windows Directory Migration
+# DIR-MOVE-TOOLS — 目录迁移工具
 
-![Platform](https://img.shields.io/badge/Platform-Windows-lightblue)
-![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20Tkinter%20%7C%20PyInstaller-blue)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+![平台](https://img.shields.io/badge/平台-Windows-lightblue)
+![技术](https://img.shields.io/badge/技术-Python%20%7C%20Tkinter-green)
 
-Windows desktop tool for migrating AppData and large directories using symbolic links (directory junctions), with UAC elevation, whitelist protection, transaction recovery, and SHA-256 integrity verification.
+## 📋 项目概览
 
-**Version:** v1.9.2  
-**Updated:** 2026-07-15  
-**Requirements:** Windows 10/11 x64
+Windows 桌面工具，用符号链接迁移 AppData 等大目录，带事务恢复与完整性校验。
 
-## ⚡ Core Features
+**项目类型：** Windows 实用工具  
+**开发周期：** 2024  
+**项目状态：** 稳定版本
 
-- **Symbolic Link Migration:** Use directory junctions to relocate AppData to another disk
-- **UAC Elevation:** Automatic administrator privilege request
-- **Whitelist Protection:** Prevent accidental migration of system-critical directories
-- **Transaction Recovery:** Automatic rollback on failure
-- **Integrity Verification:** SHA-256 checksum validation
-- **GUI Interface:** User-friendly Windows desktop application
-- **Professional Packaging:** PyInstaller EXE with Windows CI
+## ⚡ 核心特性
 
-## 🎯 Use Case
+- 符号链接目录迁移
+- 事务恢复机制
+- 完整性校验
+- Tkinter 图形界面
+- PyInstaller 打包
 
-Windows C: drive space optimization by moving large directories (AppData, etc.) to secondary drives while maintaining complete directory hierarchy, transparent to applications.
+## 🛠️ 技术栈
 
-## 🛠️ Tech Stack
+- Python 3.11+
+- Tkinter
+- PyInstaller
 
-- Python 3.9+
-- Tkinter (GUI)
-- PyInstaller (EXE packaging)
-- Windows API
-- GitHub Actions (CI/CD)
+## 📚 更多信息
 
-## 📊 Features
-
-- Directory size calculation and estimation
-- Real-time progress tracking
-- Error handling and rollback
-- System safety checks
-- Detailed logging
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Practical Windows utility demonstrating desktop application development and system-level operations.*
+*Windows 目录迁移工具，支持事务恢复和完整性校验。*

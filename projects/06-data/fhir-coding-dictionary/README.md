@@ -1,34 +1,18 @@
-# FHIR Coding Dictionary - Medical Coding Library
+# FHIR Coding Dictionary — 医疗编码字典
 
-![Tech](https://img.shields.io/badge/Tech-FHIR%20%7C%20JSON%20Schema-blue)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-FHIR standard medical coding dictionary library with JSON Schema validation and device mapping service.
+FHIR 医疗编码字典工具，支持 ICD-10、SNOMED CT 等标准编码查询。
 
-**Version:** v2.1.0+owlRD  
-**Project Type:** Data Service  
-**Copyright:** WiseFido
+**项目类型：** 医疗信息化工具  
+**项目状态：** 活跃开发
 
-## ⚡ Features
+## 📚 更多信息
 
-- FHIR standard compliance
-- JSON Schema validation
-- Device data mapping
-- Docker deployment
-- RESTful API
-
-## 🛠️ Tech Stack
-
-- FHIR standards
-- JSON Schema
-- Docker
-- API service
-
-## 🔗 Use Case
-
-Medical IoT device data standardization and FHIR compliance mapping.
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Data project demonstrating healthcare standards integration and API development.*
+*FHIR 标准医疗编码字典工具。*

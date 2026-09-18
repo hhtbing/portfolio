@@ -1,21 +1,18 @@
-# Resume Evidence - Resume & Evidence Pack
+# Resume Evidence — 简历证据管理
 
-![Tech](https://img.shields.io/badge/Tech-Documentation-lightgrey)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Resume and evidence materials package generated from local Codex, remote host systems, and GitHub account activities.
+简历项目证据材料管理工具，用于整理和展示项目成果。
 
-**Project Type:** Documentation  
-**Purpose:** Career evidence and project inventory
+**项目类型：** 文档工具  
+**项目状态：** 个人使用
 
-## 📚 Contents
+## 📚 更多信息
 
-- Resume materials
-- Project evidence
-- Technical inventory
-- GitHub activity records
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Documentation project for career materials and project evidence organization.*
+*简历项目证据材料管理工具。*

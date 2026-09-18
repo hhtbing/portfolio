@@ -1,37 +1,18 @@
-# HEIC-TOOLS - HEIC Image Viewer & Converter
+# HEIC-TOOLS — 图片格式转换
 
-![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20WPF-purple)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Windows desktop tool for viewing and converting HEIC (High Efficiency Image Container) format images from Apple devices.
+HEIC 图片格式转换工具，支持批量转换为 JPEG/PNG。
 
-**Project Type:** Desktop Utility  
-**Platform:** Windows
+**项目类型：** 实用工具  
+**项目状态：** 稳定版本
 
-## ⚡ Features
+## 📚 更多信息
 
-### heic-viewer - Image Viewer
-- File browsing (single file or batch folder)
-- Image viewing with adaptive window sizing
-- Image operations (zoom, pan)
-- File navigation (previous/next, arrow keys)
-- Format conversion (JPG/PNG)
-- Batch conversion support
-
-### heic-file - Test Files
-- Sample HEIC files for testing viewer functionality
-
-## 🎯 Use Case
-
-Windows users who need to view and process HEIC format photos taken with iPhone/iPad without format conversion.
-
-## 🛠️ Tech Stack
-
-- Python
-- WPF (Windows Presentation Foundation)
-- HEIC decoding libraries
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Utility demonstrating image format handling and Windows desktop development.*
+*HEIC 图片格式批量转换工具。*

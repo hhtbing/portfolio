@@ -1,39 +1,18 @@
-# TI Radar Development Platform - Historical Reference
+# TI 雷达开发平台
 
-![Status](https://img.shields.io/badge/Status-Archive-lightgrey)
-![Tech](https://img.shields.io/badge/Tech-TI%20SDK%20%7C%20Python-lightgrey)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Historical TI radar development platform project. This project has been superseded by the AWRL6844 gateway system but is retained as a technical reference for radar development history and SDK integration.
+TI 雷达开发平台历史参考项目。
 
-**Project Type:** Embedded Development Platform  
-**Status:** Archived (Reference Only)  
-**Note:** Superseded by AWRL6844EVM_J5_link_WT99P4C5-S1_J4
+**项目类型：** 嵌入式开发  
+**项目状态：** 历史参考
 
-## 🎯 Historical Context
+## 📚 更多信息
 
-This project represents the earlier phase of TI mmWave radar development, including:
-- TI mmWave SDK integration
-- Radar configuration tools
-- Data processing pipelines
-- Firmware flashing utilities
-
-## 🛠️ Tech Stack
-
-- TI mmWave SDK
-- Python (GUI tools)
-- Tkinter (Desktop applications)
-- Serial communication protocols
-
-## 📚 Reference Value
-
-This project is retained for:
-- Historical development records
-- SDK integration experience
-- Radar development methodology
-- Migration reference to AWRL6844 system
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*This archived project demonstrates the evolution of radar development platforms and serves as technical reference material.*
+*TI 雷达开发平台历史参考项目。*

@@ -1,27 +1,18 @@
-# OwlFront Mock - Care System Demo Frontend
+# OwlFront Mock — 前端演示
 
-![Tech](https://img.shields.io/badge/Tech-Vue%20%7C%20JavaScript-green)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Demo frontend for elderly care monitoring system, showcasing health monitoring dashboard and data visualization.
+OwlFront 前端演示项目，用于原型验证和 UI 设计。
 
-**Project Type:** Demo Frontend  
-**Tech Stack:** Vue.js, JavaScript
+**项目类型：** 前端原型  
+**项目状态：** 演示项目
 
-## ⚡ Features
+## 📚 更多信息
 
-- Health monitoring dashboard
-- Real-time data visualization
-- Care facility management interface
-- Responsive design
-
-## 🛠️ Tech Stack
-
-- Vue.js 3.x
-- JavaScript
-- HTML5/CSS3
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Demo project showcasing frontend development and data visualization skills.*
+*OwlFront 前端演示和原型验证项目。*

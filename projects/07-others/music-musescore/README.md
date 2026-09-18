@@ -1,28 +1,18 @@
-# Music MuseScore - BGM Batch Generator
+# Music MuseScore — 乐谱管理
 
-![Tech](https://img.shields.io/badge/Tech-MuseScore%20%7C%20Python-orange)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-Batch BGM generation tool using MuseScore command-line export, based on requirements specification to generate 10 instrumental BGM tracks in "Welcome Little Snake/menu.mp3" style.
+MuseScore 乐谱管理和编辑工具。
 
-**Project Type:** Audio Generation Tool  
-**Tech Stack:** MuseScore, Python, MIDI
+**项目类型：** 音乐工具  
+**项目状态：** 个人项目
 
-## ⚡ Features
+## 📚 更多信息
 
-- Batch music generation
-- MusicXML/MIDI output
-- MuseScore command-line MP3 export
-- Style-based composition
-
-## 🛠️ Tech Stack
-
-- MuseScore
-- Python
-- MIDI processing
-- MusicXML
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Audio tool demonstrating music generation and batch processing capabilities.*
+*乐谱管理和编辑工具。*

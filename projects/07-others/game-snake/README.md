@@ -1,48 +1,18 @@
-# Game Snake - WeChat Mini Game
+# Game Snake — 贪吃蛇游戏
 
-![Tech](https://img.shields.io/badge/Tech-WeChat%20Mini%20Game-green)
+> 中文 | [**English Documentation**](./README_en.md)
 
-## 📋 Project Overview
+## 📋 项目概览
 
-"沙曼的小蛇蛇" (Shaman's Little Snake) - Multi-snake puzzle elimination game for WeChat Mini Game platform.
+经典贪吃蛇游戏的现代实现。
 
-**Project Type:** Mobile Game  
-**AppID:** wxaf093971e218837e  
-**Version:** v2.0.0  
-**Game Library:** 3.14.2
+**项目类型：** 游戏项目  
+**项目状态：** 完成
 
-## 🎮 Core Gameplay
+## 📚 更多信息
 
-- **Select Snake** → **Choose Direction** → **Move Grid by Grid** → **Exit to Eliminate**
-- Multi-snake interaction (tail cutting, instant kill, blocking)
-- Puzzle-solving through space creation and sequence planning
-
-## 🎨 Design Style
-
-- Cute minimalist visual style
-- "Do-Re-Mi" sound effects for stress relief
-- BGM as background accompaniment
-- 3 seconds to learn, 1 minute to engage
-
-## 🛠️ Tech Stack
-
-- WeChat Mini Game API
-- JavaScript
-- Game library 3.14.2
-
-## 📁 Project Structure
-
-Complete design documentation including:
-- Gameplay system design
-- Snake character design
-- Sound effect design
-- BGM design
-- Board design
-- UI/UX system design
-- Level system design
-- Game icon and logo
-- Theme design
+详细的英文文档请查看 [README_en.md](./README_en.md)
 
 ---
 
-*Game project demonstrating WeChat Mini Game development and game design capabilities.*
+*经典贪吃蛇游戏。*
