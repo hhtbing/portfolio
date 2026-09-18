@@ -1,3 +1,5 @@
+> [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
+
 # Game Snake — 贪吃蛇游戏
 
 > 中文 | [**English Documentation**](./README_en.md)

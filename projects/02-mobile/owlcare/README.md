@@ -1,3 +1,5 @@
+> [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
+
 # OwlCare — 智能监护系统
 
 > 中文 | [**English Documentation**](./README_en.md)

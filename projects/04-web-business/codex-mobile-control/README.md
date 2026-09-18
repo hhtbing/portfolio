@@ -1,3 +1,5 @@
+> [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
+
 # Codex Mobile Control — 移动端控制
 
 > 中文 | [**English Documentation**](./README_en.md)

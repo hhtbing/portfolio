@@ -1,39 +1,71 @@
-# 🚀 Benson 作品集 / Benson's Portfolio
+# Portfolio - 项目仓库
 
-> AI 辅助全栈工程师 | AIoT 开发者 | Vibe Coding 实践者
-> AI-Assisted Full-Stack Engineer | AIoT Developer | Vibe Coding Practitioner
+> 中文 | [**English**](./README_en.md)
 
-## 🌐 交互式双语站点 / Interactive Bilingual Site
+这是 Benson 的项目作品集仓库，包含 19 个公开项目，横跨 7 大技术领域。
 
-所有页面均可随时在 **中文 / English** 之间切换，语言偏好自动保存。
-Every page switches between **中文 / English** at any time, with preference auto-saved.
+## 📂 仓库组织
 
-👉 **访问站点 / Visit:** [https://hhtbing.github.io/portfolio/](https://hhtbing.github.io/portfolio/)
+本仓库采用**中文优先、双语互链**的方式组织：
 
-## 👋 关于 / About
+- 每个项目目录包含 `README.md`（中文，默认显示）和 `README_en.md`（英文版）
+- 所有 README 顶部都有"返回主页"链接和语言切换链接
+- 通过 GitHub 原生 Markdown 渲染，无需额外的 HTML 页面
 
-19 个公开项目，按 7 大类别组织，覆盖 AI 平台、移动应用、IoT 与嵌入式、Web 业务系统、开发工具、数据标准等方向。
-19 public projects across 7 categories: AI platforms, mobile apps, IoT & embedded, web business systems, developer tools, and data standards.
+## 🗂️ 项目分类
 
-📧 hhtbing@foxmail.com | 📍 Shenzhen
+### 🤖 AI 与平台类
+- [AgentMeshOS](./projects/01-ai-platform/agentmeshos) - 自托管 AI Agent 平台
+- [Codex Host Bridge](./projects/01-ai-platform/codex-bridge) - 远程开发桥接
 
-## 🗂️ 项目索引 / Project Index
+### 📱 移动应用类
+- [OwlCare](./projects/02-mobile/owlcare) - 智能监护系统
 
-| 类别 Category | 项目 Projects |
-| --- | --- |
-| 🤖 AI & Platform | [AgentMeshOS](/projects/01-ai-platform/agentmeshos/) · [Codex Host Bridge](/projects/01-ai-platform/codex-bridge/) |
-| 📱 Mobile | [OwlCare](/projects/02-mobile/owlcare/) |
-| 🔬 IoT & Embedded | [OTA-QL](/projects/03-iot-embedded/ota-system/) · [AWRL6844 Gateway](/projects/03-iot-embedded/radar-gateway/) · [TI Radar Dev](/projects/03-iot-embedded/ti-radar-dev/) |
-| 🌐 Web & Business | [Owl Website](/projects/04-web-business/owl-website/) · [OwlFront Mock](/projects/04-web-business/owl-front-mock/) · [Server Move](/projects/04-web-business/server-move/) · [Codex Mobile Control](/projects/04-web-business/codex-mobile-control/) |
-| 🔧 Developer Tools | [DIR-MOVE-TOOLS](/projects/05-tools/dir-move-tools/) · [PDF-MD-TOOLS](/projects/05-tools/pdf-md-tools/) · [Icon-data](/projects/05-tools/icon-data/) · [USB-MIC-MUTE](/projects/05-tools/usb-mic-mute/) · [HEIC-TOOLS](/projects/05-tools/heic-tools/) |
-| 📦 Data & Standards | [FHIR Coding Dictionary](/projects/06-data/fhir-coding-dictionary/) |
-| 🎮 Others | [Game Snake](/projects/07-others/game-snake/) · [Music MuseScore](/projects/07-others/music-musescore/) · [Resume Evidence](/projects/07-others/resume-evidence/) |
+### 🔬 物联网与嵌入式
+- [OTA-QL](./projects/03-iot-embedded/ota-system) - 雷达 OTA 管理系统
+- [AWRL6844 雷达网关](./projects/03-iot-embedded/radar-gateway) - ESP32 雷达网关
+- [TI 雷达开发平台](./projects/03-iot-embedded/ti-radar-dev) - 历史参考项目
 
-## 📌 更多页面 / More Pages
+### 🌐 Web 与业务系统
+- [Owl Website](./projects/04-web-business/owl-website) - 官网
+- [OwlFront Mock](./projects/04-web-business/owl-front-mock) - 前端演示
+- [Server Move](./projects/04-web-business/server-move) - 服务器迁移
+- [Codex Mobile Control](./projects/04-web-business/codex-mobile-control) - 移动端控制
 
-- 🛠️ [技术栈 Tech Stack](/tech-stack.html)
-- 📈 [时间线 Timeline](/timeline.html)
-- 👤 [关于我 About](/docs/about.html)
+### 🔧 工具与实用程序
+- [DIR-MOVE-TOOLS](./projects/05-tools/dir-move-tools) - 目录迁移工具
+- [USB-MIC-MUTE](./projects/05-tools/usb-mic-mute) - USB 麦克风控制
+- [HEIC-TOOLS](./projects/05-tools/heic-tools) - 图片格式转换
+- [PDF-MD-TOOLS](./projects/05-tools/pdf-md-tools) - 文档转换工具
+- [Icon-data](./projects/05-tools/icon-data) - 图标数据管理
+
+### 📊 数据与医疗信息化
+- [FHIR Coding Dictionary](./projects/06-data/fhir-coding-dictionary) - 医疗编码字典
+
+### 🎮 其他项目
+- [Game Snake](./projects/07-others/game-snake) - 贪吃蛇游戏
+- [Resume Evidence](./projects/07-others/resume-evidence) - 简历证据管理
+- [Music MuseScore](./projects/07-others/music-musescore) - 乐谱管理
+
+## 🚀 访问方式
+
+**从个人主页访问：**
+https://github.com/hhtbing → 点击项目链接 → 查看项目详情
+
+**直接浏览仓库：**
+https://github.com/hhtbing/portfolio → 选择项目目录 → 查看 README
+
+## 📖 文档说明
+
+- 每个项目的 README 都包含完整的项目概览、技术栈、核心特性等信息
+- 中文版为默认显示，英文版通过顶部链接切换
+- 所有 README 都可以通过"🏠 返回主页"链接回到个人主页
+
+## 🔗 相关链接
+
+- **个人主页：** https://github.com/hhtbing
+- **项目仓库：** https://github.com/hhtbing/portfolio
 
 ---
-*最后更新 / Last updated: September 2026*
+
+*使用 AI 辅助开发（Vibe Coding）构建实用系统，专注解决真实问题。*

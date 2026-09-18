@@ -1,4 +1,4 @@
-> [**中文文档**](./README.md) | English
+> [🏠 Back to Profile](https://github.com/hhtbing) | [**中文文档**](./README.md) | English
 
 # USB-MIC-MUTE - USB Microphone Mute Control
 

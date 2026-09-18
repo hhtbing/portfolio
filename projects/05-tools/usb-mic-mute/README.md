@@ -1,3 +1,5 @@
+> [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
+
 # USB-MIC-MUTE — USB 麦克风控制
 
 > 中文 | [**English Documentation**](./README_en.md)

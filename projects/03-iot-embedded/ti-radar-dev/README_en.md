@@ -1,4 +1,4 @@
-> [**中文文档**](./README.md) | English
+> [🏠 Back to Profile](https://github.com/hhtbing) | [**中文文档**](./README.md) | English
 
 # TI Radar Development Platform - Historical Reference
 
