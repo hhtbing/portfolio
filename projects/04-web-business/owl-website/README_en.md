@@ -13,28 +13,6 @@ WiseFido official website and marketing site with CMS backend for content manage
 
 ## ⚡ Core Features
 
-- Static page serving
-- Node/Express API backend
-- JWT authentication
-- CMS page editor
-- Page version save/rollback
-- Image upload
-- Access statistics
-- SMTP configuration
-- Admin operation workflow
 
 ## 🛠️ Tech Stack
 
-- Node.js + Express
-- JWT authentication
-- Docker deployment
-- Nginx reverse proxy
-- Supervisor process management
-
-## 🔗 Deployment
-
-Uses Docker, Nginx, and Supervisor to organize frontend/backend operations with API rate limiting, cache control, health checks, and log collection.
-
----
-
-*Corporate website demonstrating web development and content management capabilities.*

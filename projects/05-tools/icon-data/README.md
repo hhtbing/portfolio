@@ -15,10 +15,6 @@
 ## ⚡ 核心功能
 
 ### 多平台图标库支持
-- Font Awesome
-- Material Design Icons
-- Bootstrap Icons
-- Feather Icons
 - 其他主流图标库
 
 ### 批量下载功能
@@ -26,7 +22,6 @@
 - 分类浏览
 - 批量选择下载
 - 自定义文件名
-- 目录结构保持
 
 ### 网络功能
 - 代理支持（HTTP/HTTPS/SOCKS5）
@@ -62,33 +57,22 @@
 
 ## 🛠️ 技术栈
 
-- Python 3.x
-- GUI 框架
 - HTTP/HTTPS 客户端
 - SVG 处理库
 - 代理协议支持
-- Windows 打包
 
 ## 📦 发布形式
 
-- Windows EXE 可执行文件
-- 免安装绿色版
 - 配置文件持久化
 - 自动更新检查
 
 ## 🎯 使用场景
 
 - 前端开发图标准备
-- UI/UX 设计资源收集
-- 离线图标库建设
 - 项目图标快速选型
 
 ## 📊 支持的图标库
 
-- ✅ Font Awesome (6000+ 图标)
-- ✅ Material Design Icons (5000+ 图标)
-- ✅ Bootstrap Icons (1800+ 图标)
-- ✅ Feather Icons (280+ 图标)
 - ✅ 其他自定义图标源
 
 ---

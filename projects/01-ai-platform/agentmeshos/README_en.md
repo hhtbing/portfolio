@@ -23,24 +23,13 @@ AgentMeshOS is a self-hosted AI agent runtime platform for individuals and small
 ## ⚡ Core Features
 
 ### 1. Distributed Task Scheduling
-- Nomad-based task distribution
-- Node capability matching and selection
-- Task cancellation, recovery, and audit
 
 ### 2. AI BOSS Intelligent Orchestration
-- Natural language requirement description
-- Automatic task dependency graph generation
-- Intelligent model and worker selection
 
 ### 3. Unified Artifact Management
-- File-level SHA-256 traceability
-- Cloudreve cloud storage
-- Version control and rollback
 
 ### 4. Application Center
 - Application registration and lifecycle management
-- Standardized input/output interfaces
-- Automatic artifact archiving
 
 ## 🏗️ System Architecture
 
@@ -77,66 +66,33 @@ User Request → Console
 
 ### 1. Lightweight Architecture
 - Monolithic Runtime, avoiding microservice complexity
-- SQLite + FTS5 full-text search
 - No message queue needed, direct Nomad scheduling
 
 ### 2. Security Boundaries
-- Workers don't get cloud storage credentials
-- Models can only use registered capabilities
-- Task sandboxing and isolation
 
 ### 3. Traceability
-- All artifacts record SHA-256
-- External storage references are immutable
-- Complete audit logs
 
 ## 📊 Project Outcomes
 
-- ✅ Supports 3 production nodes collaboration
-- ✅ Manages 20+ registered applications
-- ✅ Processed 500+ tasks
-- ✅ Zero data loss, 100% traceable
 
 ## 🛠️ Tech Stack Details
 
 **Backend:**
-- Python 3.11+
-- FastAPI (Async web framework)
-- SQLite + FTS5 (Full-text search)
-- Pydantic (Data validation)
 
 **Frontend:**
-- Vanilla JavaScript (No framework)
-- Native Web Components
-- Fetch API
 
 **Infrastructure:**
-- Docker + Docker Compose
-- Nomad (Task scheduling)
-- Tailscale (Private network)
-- Nginx (Reverse proxy)
 
 **Storage:**
-- SQLite (Metadata)
-- Cloudreve (File storage)
-- WebDAV (File transfer)
 
 ## 🤔 Design Decisions
 
 ### Why SQLite?
 - Single-user scenario doesn't need complex database
-- FTS5 provides powerful full-text search
-- Simple backup - just file-level copy
 
 ### Why Nomad?
-- Lightweight, no need for Kubernetes complexity
-- Native support for Docker and binary tasks
-- Good integration with HashiCorp ecosystem
 
 ### Why Not Microservices?
-- Current single-user scale doesn't need it
-- Reduce deployment and maintenance complexity
-- Keep system simple and controllable
 
 ## 📚 Repository Structure
 
@@ -155,8 +111,6 @@ AgentMeshOS/
 
 ## 🔗 Related Links
 
-- 📝 System Documentation: https://docs.yohan.fun
-- 🎮 Console: https://console.yohan.fun
 
 ---
 

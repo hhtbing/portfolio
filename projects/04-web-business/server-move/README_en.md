@@ -17,10 +17,6 @@ Organized for multiple independent website migrations. Each website owns its con
 
 ## 🛠️ Tech Stack
 
-- Docker
-- Nginx
-- SSL/TLS certificates
-- Shell scripts
 
 ---
 

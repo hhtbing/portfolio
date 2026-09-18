@@ -36,66 +36,31 @@ Radar data is only forwarded as raw bytes between P4, C5, and TCP—no format ch
 ## ⚡ Core Features
 
 ### 1. USB Host Integration
-- ESP32-P4 USB Host connects to AWRL6844EVM J5
-- XDS110 CDC interfaces:
-  - MI_00: CLI (115200 baud)
-  - MI_03: Radar output (1250000 baud)
-  - MI_02: XDS110 debug control (target reset only)
 
 ### 2. Wi-Fi Provisioning
-- AP mode for first-time setup
-- Web interface at 192.168.4.1
-- Wi-Fi scanning and configuration
-- Server address and port setup
 
 ### 3. TCP Bridge
-- CLI channel (port 41001)
-- Radar data channel (port 41002)
-- Health check channel
-- Raw byte forwarding
 
 ### 4. Web Management
-- Device registration
-- Radar reset control
-- Configuration queue management
-- Real-time data streaming
-- Packet capture
 
 ## 💡 Technical Highlights
 
 ### Dual-ESP32 Architecture
-- P4: USB Host + XDS110 CDC handling
-- C5: SDIO + Wi-Fi/TCP networking
-- Clean separation of concerns
 
 ### AP Provisioning
 - First boot or IO4/IO5 grounding triggers AP mode
 - Open Wi-Fi hotspot named `wisefidoXXXX` (last 4 digits of MAC)
-- Web-based configuration at 192.168.4.1
-- Automatic device ID generation
 
 ### Raw Data Forwarding
-- No protocol parsing at gateway level
-- Direct byte forwarding for maximum performance
-- Preserves original TI radar data format
 
 ## 🛠️ Tech Stack
 
 **Firmware:**
-- ESP-IDF 6.0.2
-- ESP32-P4 (USB Host)
-- ESP32-C5 (Wi-Fi/TCP)
 - C/C++
 
 **Web Gateway:**
-- Node.js + Express
-- WebSocket for real-time data
-- Native HTML/CSS/JavaScript
 
 **Deployment:**
-- Docker single-container
-- GitHub Actions CI/CD
-- Multi-architecture images
 
 ## 📚 Repository Structure
 
@@ -113,28 +78,12 @@ AWRL6844EVM_J5_link_WT99P4C5-S1_J4/
 
 ## 🔗 Device Connection
 
-### First-Time Setup
-1. Power WT99P4C5-S1 J1 Type-C
-2. Connect AWRL6844EVM J5 Micro-USB to J4 USB Host
-3. Ground IO4 or IO5 during C5 startup to enter AP mode
-4. Connect to Wi-Fi hotspot `wisefidoXXXX`
-5. Open http://192.168.4.1 for configuration
-6. Scan and select Wi-Fi network
-7. Enter server address (default: 6844.yohan.fun)
-8. Save configuration and wait for device to reconnect
-
 ### Normal Operation
-- Maintains J1 power and J4 USB data connection
 - C5 auto-connects to server CLI/Radar/Health channels
 - Web panel radar reset only resets TI radar, not P4/C5
 
 ## 📊 Project Status
 
-- ✅ Production deployment
-- ✅ Stable firmware releases
-- ✅ Docker deployment ready
-- ✅ Web management interface
-- ✅ Real-time data streaming
 
 ---
 

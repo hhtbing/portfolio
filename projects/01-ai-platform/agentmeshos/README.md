@@ -25,18 +25,15 @@ AgentMeshOS 是面向个人和小团队的自托管 AI Agent 运行时平台。�
 ## ⚡ 核心特性
 
 ### 1. 分布式任务调度
-- 基于 Nomad 的任务分发
 - 节点能力匹配和选择
 - 任务取消、恢复和审计
 
 ### 2. AI BOSS 智能编排
 - 自然语言需求描述
 - 自动生成任务依赖图
-- 智能选择模型和 Worker
 
 ### 3. 统一成果管理
 - 文件级 SHA-256 追溯
-- Cloudreve 云盘存储
 - 版本控制和回滚
 
 ### 4. 应用中心
@@ -78,18 +75,13 @@ AgentMeshOS 是面向个人和小团队的自托管 AI Agent 运行时平台。�
 ## 💡 技术亮点
 
 ### 1. 轻量架构
-- 单体 Runtime，避免微服务复杂度
-- SQLite + FTS5 全文搜索
-- 无需消息队列，直接 Nomad 调度
 
 ### 2. 安全边界
-- Worker 不接触云盘凭据
 - 模型只能调用已注册能力
 - 任务沙箱和隔离
 
 ### 3. 可追溯性
 - 所有成果记录 SHA-256
-- 外部存储引用不可变
 - 完整审计日志
 
 ## 📊 项目成果
@@ -102,26 +94,12 @@ AgentMeshOS 是面向个人和小团队的自托管 AI Agent 运行时平台。�
 ## 🛠️ 技术栈详情
 
 **后端：**
-- Python 3.11+
-- FastAPI（异步 Web 框架）
-- SQLite + FTS5（全文搜索）
-- Pydantic（数据验证）
 
 **前端：**
-- Vanilla JavaScript（无框架）
-- 原生 Web Components
-- Fetch API
 
 **基础设施：**
-- Docker + Docker Compose
-- Nomad（任务调度）
-- Tailscale（私有网络）
-- Nginx（反向代理）
 
 **存储：**
-- SQLite（元数据）
-- Cloudreve（文件存储）
-- WebDAV（文件传输）
 
 ## 🤔 设计决策
 
@@ -131,13 +109,9 @@ AgentMeshOS 是面向个人和小团队的自托管 AI Agent 运行时平台。�
 - 备份简单 - 直接文件级拷贝
 
 ### 为什么用 Nomad？
-- 轻量级，不需要 Kubernetes 的复杂度
-- 原生支持 Docker 和二进制任务
-- 与 HashiCorp 生态集成良好
 
 ### 为什么不用微服务？
 - 当前单用户规模不需要
-- 减少部署和维护复杂度
 - 保持系统简单可控
 
 ## 📚 仓库结构
@@ -157,8 +131,6 @@ AgentMeshOS/
 
 ## 🔗 相关链接
 
-- 📝 系统文档：https://docs.yohan.fun
-- 🎮 控制台：https://console.yohan.fun
 
 ---
 

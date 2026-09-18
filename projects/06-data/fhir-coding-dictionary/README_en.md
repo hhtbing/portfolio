@@ -14,18 +14,9 @@ FHIR standard medical coding dictionary library with JSON Schema validation and 
 
 ## ⚡ Features
 
-- FHIR standard compliance
-- JSON Schema validation
-- Device data mapping
-- Docker deployment
-- RESTful API
 
 ## 🛠️ Tech Stack
 
-- FHIR standards
-- JSON Schema
-- Docker
-- API service
 
 ## 🔗 Use Case
 

@@ -13,16 +13,9 @@ USB microphone mute control mapped to keyboard shortcut (Right Ctrl). Targets US
 
 ## ⚡ Features
 
-- USB HID Consumer Control interface handling
-- Keyboard shortcut mapping
-- No interference with USB audio interface
-- Low-level hardware control
 
 ## 🛠️ Tech Stack
 
-- C programming
-- USB HID protocol
-- Windows driver interface
 
 ---
 

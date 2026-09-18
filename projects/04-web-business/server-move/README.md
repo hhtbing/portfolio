@@ -46,12 +46,6 @@ server-move/
 - 批量迁移工具
 - 验证检查清单
 
-### 部署管理
-- Docker Compose 编排
-- Nginx 反向代理配置
-- SSL/TLS 证书管理
-- 健康检查机制
-
 ### 数据持久化
 - 独立数据目录
 - 备份策略
@@ -70,14 +64,9 @@ server-move/
 - HTTPS 强制跳转
 - 证书自动续期
 - 访问日志记录
-- 安全头配置
 
 ## 🛠️ 技术栈
 
-- Docker & Docker Compose
-- Nginx 反向代理
-- SSL/TLS 证书管理（Let's Encrypt）
-- Shell 脚本自动化
 
 ## 📚 迁移流程
 
@@ -93,7 +82,6 @@ server-move/
 - 多站点服务器整合
 - 云平台迁移
 - 容器化改造
-- 灾备环境搭建
 
 ---
 

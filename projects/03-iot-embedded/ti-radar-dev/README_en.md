@@ -16,25 +16,13 @@ Historical TI radar development platform project. This project has been supersed
 ## 🎯 Historical Context
 
 This project represents the earlier phase of TI mmWave radar development, including:
-- TI mmWave SDK integration
-- Radar configuration tools
-- Data processing pipelines
-- Firmware flashing utilities
 
 ## 🛠️ Tech Stack
 
-- TI mmWave SDK
-- Python (GUI tools)
-- Tkinter (Desktop applications)
-- Serial communication protocols
 
 ## 📚 Reference Value
 
 This project is retained for:
-- Historical development records
-- SDK integration experience
-- Radar development methodology
-- Migration reference to AWRL6844 system
 
 ---
 

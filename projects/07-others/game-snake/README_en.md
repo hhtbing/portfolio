@@ -21,29 +21,13 @@
 
 ## 🎨 Design Style
 
-- Cute minimalist visual style
-- "Do-Re-Mi" sound effects for stress relief
-- BGM as background accompaniment
-- 3 seconds to learn, 1 minute to engage
 
 ## 🛠️ Tech Stack
 
-- WeChat Mini Game API
-- JavaScript
-- Game library 3.14.2
 
 ## 📁 Project Structure
 
 Complete design documentation including:
-- Gameplay system design
-- Snake character design
-- Sound effect design
-- BGM design
-- Board design
-- UI/UX system design
-- Level system design
-- Game icon and logo
-- Theme design
 
 ---
 

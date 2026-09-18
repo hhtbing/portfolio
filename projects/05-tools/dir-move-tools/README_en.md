@@ -29,19 +29,9 @@ Windows C: drive space optimization by moving large directories (AppData, etc.) 
 
 ## 🛠️ Tech Stack
 
-- Python 3.9+
-- Tkinter (GUI)
-- PyInstaller (EXE packaging)
-- Windows API
-- GitHub Actions (CI/CD)
 
 ## 📊 Features
 
-- Directory size calculation and estimation
-- Real-time progress tracking
-- Error handling and rollback
-- System safety checks
-- Detailed logging
 
 ---
 

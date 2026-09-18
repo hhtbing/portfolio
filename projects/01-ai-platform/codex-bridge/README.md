@@ -40,23 +40,15 @@ Windows 宿主项目目录
 ## ⚡ 核心特性
 
 ### 1. 管理 Windows Codex 服务
-- 发现和启动本地 Codex App Server
 - 维护生命周期和就绪状态
 - 处理启动、停止、重启、端口冲突
 
 ### 2. 提供远程业务入口
-- 在 Windows Tailnet 地址上监听远程 WebSocket 连接
-- 将已连接节点的连接转发到本地 App Server
 - 维护连接数、节点连接数、活动追踪
 
 ### 3. 维护节点准入状态
-- 显示节点名称、主机名、Tailnet 地址、平台
-- Gateway 会话、App Server 状态、项目状态
-- Allow/Deny 准入模型
 
 ### 4. Linux 节点永久代理
-- 统一的 Linux 入驻材料
-- 通过 systemd 服务实现永久代理
 - 连接报告和验证脚本
 
 ## 🏗️ 系统架构
@@ -77,10 +69,6 @@ Windows 项目目录
 
 ### 关键技术
 
-- **WPF：** 桌面应用 UI
-- **WebSocket：** 节点通信协议
-- **Tailscale：** 私有网络连接
-- **systemd：** Linux 节点服务管理
 
 ## 💡 技术亮点
 
@@ -88,15 +76,10 @@ Windows 项目目录
 - 基于会话的连接转发
 - 节点准入和访问控制
 - 状态观测和只读导出
-- 支持 Linux 节点永久连接
 
 ## 🛠️ 技术栈
 
 - C# / .NET
-- WPF (Windows Presentation Foundation)
-- WebSocket
-- Tailscale
-- systemd（用于 Linux 节点）
 
 ## 📚 仓库结构
 
@@ -113,8 +96,6 @@ Codex-Host-Bridge/
 
 ## 🔗 相关链接
 
-- Windows Bridge：用于 Codex 服务管理的桌面应用
-- Linux 节点代理：通过 systemd 服务实现永久连接
 
 ---
 

@@ -43,57 +43,21 @@ Current Android main app uses package name `com.wisefido.owlmonitor`, with Googl
 ## ⚡ Core Features
 
 ### Android Application
-- Native Material 3 design with Jetpack Compose
-- Real-time monitoring dashboard
-- Alert system with FCM push notifications
-- Radar data visualization
-- Sleep quality analysis
-- Device configuration and management
-- Biometric authentication
-- Google Play in-app updates
 
 ### iOS Application
-- Native UIKit interface
-- iPhone and Apple Watch support
-- HealthKit integration
-- Real-time data synchronization
-- Push notifications
 
 ### Device Configuration
-- QR code scanning for device discovery
-- BLE device discovery and pairing
-- Wi-Fi provisioning
-- Device parameter configuration
 
 ### OTA System
-- Self-hosted update backend
-- APK version management
-- Release approval workflow
-- Update statistics and audit logs
 
 ## 🛠️ Tech Stack Details
 
 ### Android
-- Android Gradle Plugin + Gradle Kotlin DSL
-- Kotlin, Jetpack Compose, Material 3
-- Hilt dependency injection
-- Retrofit, OkHttp, SSE, Kotlin Serialization
-- DataStore, Security Crypto, Biometric
-- BLE, Wi-Fi provisioning SDK
 - `compileSdk 35`, `targetSdk 35`, `minSdk 26`, JDK 17
 
 ### iOS
-- Swift with UIKit
-- CocoaPods dependency management
-- Moya, Kingfisher, SnapKit
-- iPhone and Apple Watch projects
-- Minimum platform iOS 18
 
 ### Update Hub
-- FastAPI + Uvicorn
-- Native HTML/CSS/JavaScript admin backend
-- JSON and mounted directory persistence
-- Docker single-container deployment
 - Multi-architecture images via GitHub Container Registry
 
 ## 💡 Design Decisions
@@ -104,38 +68,8 @@ This combination extends the repository's existing architecture:
 - Independent tools separated by device access boundaries
 - Avoids coupling all capabilities into the main app
 
-## 📚 Quick Start
-
-### Environment Requirements
-- Git, JDK 17
-- Android Studio or available Android SDK
-- macOS + Xcode + CocoaPods (iOS only)
-- Python 3.11+ (Update Hub local development)
-- Docker (Update Hub verification/deployment)
-
-### Clone Repository
-```bash
-git clone [repository-url]
-cd OwlMonitor_app
-```
-
-### Build Android
-```bash
-cd project-code/Android_OwlCare_google_play
-./gradlew assembleDebug
-```
-
-### Build iOS
-```bash
-cd project-code/ios-owlCare-update
-pod install
-open OwlCare.xcworkspace
-```
-
 ## 🔗 Release Channels
 
-- **Google Play:** Primary distribution channel
-- **Update Hub:** Self-hosted updates and testing
 - **GitHub Actions:** Automated builds and releases
 
 ---

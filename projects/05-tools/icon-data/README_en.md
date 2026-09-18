@@ -13,20 +13,9 @@ Powerful SVG icon library batch download tool supporting multiple mainstream ico
 
 ## ⚡ Features
 
-- Multi-platform icon library support
-- Batch download functionality
-- Proxy support
-- Connectivity testing
-- Index generation
-- GUI interface
-- Windows packaging
 
 ## 🛠️ Tech Stack
 
-- Python
-- GUI framework
-- HTTP/HTTPS client
-- SVG processing
 
 ---
 

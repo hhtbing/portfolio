@@ -38,9 +38,6 @@ Windows Host Project Directory
 ## ⚡ Core Features
 
 ### 1. Manage Windows Codex Services
-- Discover and start local Codex App Server
-- Maintain lifecycle and readiness state
-- Handle startup, stop, restart, port conflicts
 
 ### 2. Provide Remote Business Entry
 - Listen for remote WebSocket connections on Windows Tailnet address
@@ -50,12 +47,8 @@ Windows Host Project Directory
 ### 3. Maintain Node Access Status
 - Display node name, hostname, Tailnet address, platform
 - Gateway sessions, App Server status, project status
-- Allow/Deny admission model
 
 ### 4. Linux Node Permanent Proxy
-- Unified Linux onboarding materials
-- Permanent proxy with systemd service
-- Connection reports and verification scripts
 
 ## 🏗️ System Architecture
 
@@ -75,26 +68,13 @@ Windows Project Directory
 
 ### Key Technologies
 
-- **WPF:** Desktop application UI
-- **WebSocket:** Node communication protocol
-- **Tailscale:** Private network connectivity
-- **systemd:** Linux node service management
 
 ## 💡 Technical Highlights
 
-- Cross-platform remote development support
-- Session-based connection forwarding
-- Node admission and access control
-- Status observation and read-only export
-- Support for permanent Linux node connection
 
 ## 🛠️ Tech Stack
 
 - C# / .NET
-- WPF (Windows Presentation Foundation)
-- WebSocket
-- Tailscale
-- systemd (for Linux nodes)
 
 ## 📚 Repository Structure
 

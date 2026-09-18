@@ -13,15 +13,9 @@ Demo frontend for elderly care monitoring system, showcasing health monitoring d
 
 ## ⚡ Features
 
-- Health monitoring dashboard
-- Real-time data visualization
-- Care facility management interface
-- Responsive design
 
 ## 🛠️ Tech Stack
 
-- Vue.js 3.x
-- JavaScript
 - HTML5/CSS3
 
 ---

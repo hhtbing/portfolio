@@ -13,19 +13,9 @@ Batch conversion tool for documents and images to semantic Markdown format.
 
 ## ⚡ Features
 
-- Multi-format document parsing
-- OCR for image-based PDFs
-- Semantic Markdown generation
-- Image extraction
-- Checkpoint and resume support
-- Windows EXE packaging
 
 ## 🛠️ Tech Stack
 
-- Python
-- OCR libraries
-- Markdown processing
-- PyInstaller
 
 ---
 

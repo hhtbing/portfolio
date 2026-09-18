@@ -14,12 +14,6 @@ Windows desktop tool for viewing and converting HEIC (High Efficiency Image Cont
 ## ⚡ Features
 
 ### heic-viewer - Image Viewer
-- File browsing (single file or batch folder)
-- Image viewing with adaptive window sizing
-- Image operations (zoom, pan)
-- File navigation (previous/next, arrow keys)
-- Format conversion (JPG/PNG)
-- Batch conversion support
 
 ### heic-file - Test Files
 - Sample HEIC files for testing viewer functionality
@@ -30,9 +24,6 @@ Windows users who need to view and process HEIC format photos taken with iPhone/
 
 ## 🛠️ Tech Stack
 
-- Python
-- WPF (Windows Presentation Foundation)
-- HEIC decoding libraries
 
 ---
 

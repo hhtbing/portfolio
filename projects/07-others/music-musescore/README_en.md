@@ -13,17 +13,9 @@ Batch BGM generation tool using MuseScore command-line export, based on requirem
 
 ## ⚡ Features
 
-- Batch music generation
-- MusicXML/MIDI output
-- MuseScore command-line MP3 export
-- Style-based composition
 
 ## 🛠️ Tech Stack
 
-- MuseScore
-- Python
-- MIDI processing
-- MusicXML
 
 ---
 

@@ -45,26 +45,19 @@ OwlCare 是一个综合性多平台健康监护产品仓库，集中维护 Andro
 ## ⚡ 核心特性
 
 ### Android 应用
-- 原生 Material 3 设计，使用 Jetpack Compose
 - 实时监护仪表板
 - 告警系统，带 FCM 推送通知
 - 雷达数据可视化
 - 睡眠质量分析
 - 设备配置和管理
 - 生物识别认证
-- Google Play 应用内更新
 
 ### iOS 应用
-- 原生 UIKit 界面
-- iPhone 和 Apple Watch 支持
-- HealthKit 集成
 - 实时数据同步
 - 推送通知
 
 ### 设备配置
 - 二维码扫描设备发现
-- BLE 设备发现和配对
-- Wi-Fi 配网
 - 设备参数配置
 
 ### OTA 系统
@@ -76,69 +69,22 @@ OwlCare 是一个综合性多平台健康监护产品仓库，集中维护 Andro
 ## 🛠️ 技术栈详情
 
 ### Android
-- Android Gradle Plugin + Gradle Kotlin DSL
-- Kotlin, Jetpack Compose, Material 3
-- Hilt 依赖注入
-- Retrofit, OkHttp, SSE, Kotlin Serialization
-- DataStore, Security Crypto, Biometric
-- BLE, Wi-Fi 配网 SDK
 - `compileSdk 35`, `targetSdk 35`, `minSdk 26`, JDK 17
 
 ### iOS
-- Swift with UIKit
-- CocoaPods 依赖管理
-- Moya, Kingfisher, SnapKit
-- iPhone 和 Apple Watch 项目
-- 最低平台 iOS 18
 
 ### Update Hub
-- FastAPI + Uvicorn
-- 原生 HTML/CSS/JavaScript 管理后台
 - JSON 和挂载目录持久化
-- Docker 单容器部署
-- 通过 GitHub Container Registry 提供多架构镜像
 
 ## 💡 设计决策
 
 此组合扩展了仓库的现有架构：
 - 移动端保持原生体验和设备能力
-- 发布后台使用轻量级 Python 服务以降低部署复杂度
 - 独立工具按设备访问边界分离
 - 避免将所有能力耦合到主应用
 
-## 📚 快速开始
-
-### 环境要求
-- Git, JDK 17
-- Android Studio 或可用的 Android SDK
-- macOS + Xcode + CocoaPods（仅限 iOS）
-- Python 3.11+（Update Hub 本地开发）
-- Docker（Update Hub 验证/部署）
-
-### 克隆仓库
-```bash
-git clone [repository-url]
-cd OwlMonitor_app
-```
-
-### 构建 Android
-```bash
-cd project-code/Android_OwlCare_google_play
-./gradlew assembleDebug
-```
-
-### 构建 iOS
-```bash
-cd project-code/ios-owlCare-update
-pod install
-open OwlCare.xcworkspace
-```
-
 ## 🔗 发布渠道
 
-- **Google Play：** 主要分发渠道
-- **Update Hub：** 自托管更新和测试
-- **GitHub Actions：** 自动化构建和发布
 
 ---
 

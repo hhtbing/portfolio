@@ -37,20 +37,12 @@ Web 网关 HTTP/WebSocket 40080
 ## ⚡ 核心功能
 
 ### 1. USB Host 集成
-- ESP32-P4 USB Host 连接 AWRL6844EVM J5
-- XDS110 CDC 接口：
-  - MI_00：CLI（115200 波特率）
-  - MI_03：雷达输出（1250000 波特率）
-  - MI_02：XDS110 调试控制（仅目标复位）
 
 ### 2. Wi-Fi 配网
 - AP 模式用于首次设置
-- Web 界面地址 192.168.4.1
-- Wi-Fi 扫描和配置
 - 服务器地址和端口设置
 
 ### 3. TCP 桥接
-- CLI 通道（端口 41001）
 - 雷达数据通道（端口 41002）
 - 健康检查通道
 - 原始字节转发
@@ -65,38 +57,22 @@ Web 网关 HTTP/WebSocket 40080
 ## 💡 技术亮点
 
 ### 双 ESP32 架构
-- P4：USB Host + XDS110 CDC 处理
-- C5：SDIO + Wi-Fi/TCP 网络
 - 清晰的职责分离
 
 ### AP 配网机制
-- 首次启动或 IO4/IO5 接地触发 AP 模式
-- 开放 Wi-Fi 热点名称 `wisefidoXXXX`（MAC 地址后 4 位）
-- Web 配置界面 192.168.4.1
-- 自动生成设备 ID
 
 ### 原始数据转发
 - 网关层不进行协议解析
 - 直接字节转发以获得最大性能
-- 保留原始 TI 雷达数据格式
 
 ## 🛠️ 技术栈
 
 **固件：**
-- ESP-IDF 6.0.2
-- ESP32-P4（USB Host）
-- ESP32-C5（Wi-Fi/TCP）
 - C/C++
 
 **Web 网关：**
-- Node.js + Express
-- WebSocket 实时数据
-- 原生 HTML/CSS/JavaScript
 
 **部署：**
-- Docker 单容器
-- GitHub Actions CI/CD
-- 多架构镜像
 
 ## 📚 仓库结构
 
@@ -125,16 +101,10 @@ AWRL6844EVM_J5_link_WT99P4C5-S1_J4/
 8. 保存配置并等待设备重新连接
 
 ### 正常运行
-- 保持 J1 供电和 J4 USB 数据连接
-- C5 自动连接到服务器 CLI/Radar/Health 通道
-- Web 面板雷达复位仅重置 TI 雷达，不重置 P4/C5
 
 ## 📊 项目状态
 
-- ✅ 生产环境部署
 - ✅ 稳定的固件版本
-- ✅ Docker 部署就绪
-- ✅ Web 管理界面
 - ✅ 实时数据流
 
 ## 🎯 应用场景
