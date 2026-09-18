@@ -1,4 +1,4 @@
-> [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
+> 🏠 [返回主页](https://github.com/hhtbing) | **中文** / [English](./README_en.md)
 
 # Icon-data — SVG 图标库批量下载器
 

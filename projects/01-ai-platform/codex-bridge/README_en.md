@@ -1,4 +1,4 @@
-> [🏠 Back to Profile](https://github.com/hhtbing/hhtbing/blob/main/README_en.md) | [**中文文档**](./README.md) | English
+> 🏠 [Back to Homepage](https://github.com/hhtbing/hhtbing/blob/main/README_en.md) | [中文](./README.md) / **English**
 
 # Codex Host Bridge - Remote Development Bridge
 
