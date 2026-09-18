@@ -1,48 +1,19 @@
-# Game Snake - WeChat Mini Game
+# Game Snake — 微信小游戏 / Game Snake — WeChat Mini Game
 
-![Tech](https://img.shields.io/badge/Tech-WeChat%20Mini%20Game-green)
+> “沙曼的小蛇蛇”：多蛇解谜消除微信小游戏，点选蛇、选方向、逐格移动、出界消除。
 
-## 📋 Project Overview
+> "Shaman's Little Snake": a multi-snake puzzle elimination WeChat mini game — select, aim, move grid by grid, and clear off the board.
 
-"沙曼的小蛇蛇" (Shaman's Little Snake) - Multi-snake puzzle elimination game for WeChat Mini Game platform.
+- 类别 Category：其他项目 / Other Projects
+- 状态 Status：v2.0.0，定位全年龄休闲玩家。 / v2.0.0 for all-age casual players.
+- 技术栈 Tech Stack：WeChat Mini Game、JavaScript、Game library 3.14.2
 
-**Project Type:** Mobile Game  
-**AppID:** wxaf093971e218837e  
-**Version:** v2.0.0  
-**Game Library:** 3.14.2
+## 🌐 交互式双语页面 / Interactive Bilingual Page
 
-## 🎮 Core Gameplay
+点击打开可切换 **中文 / English** 的完整项目页面：
+Open the full project page with **中文 / English** switching:
 
-- **Select Snake** → **Choose Direction** → **Move Grid by Grid** → **Exit to Eliminate**
-- Multi-snake interaction (tail cutting, instant kill, blocking)
-- Puzzle-solving through space creation and sequence planning
-
-## 🎨 Design Style
-
-- Cute minimalist visual style
-- "Do-Re-Mi" sound effects for stress relief
-- BGM as background accompaniment
-- 3 seconds to learn, 1 minute to engage
-
-## 🛠️ Tech Stack
-
-- WeChat Mini Game API
-- JavaScript
-- Game library 3.14.2
-
-## 📁 Project Structure
-
-Complete design documentation including:
-- Gameplay system design
-- Snake character design
-- Sound effect design
-- BGM design
-- Board design
-- UI/UX system design
-- Level system design
-- Game icon and logo
-- Theme design
+👉 [https://hhtbing.github.io/portfolio/projects/07-others/game-snake/](https://hhtbing.github.io/portfolio/projects/07-others/game-snake/)
 
 ---
-
-*Game project demonstrating WeChat Mini Game development and game design capabilities.*
+[返回作品集 / Back to Portfolio](https://hhtbing.github.io/portfolio/)
