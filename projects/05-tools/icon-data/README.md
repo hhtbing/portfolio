@@ -1,20 +1,96 @@
 > [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
 
-# Icon-data — 图标数据管理
+# Icon-data — SVG 图标库批量下载器
 
-> 中文 | [**English Documentation**](./README_en.md)
+![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20GUI-green)
+![Version](https://img.shields.io/badge/Version-v4.0.1-blue)
 
-## 📋 项目概览
+## 📋 项目概述
 
-图标数据管理工具，用于项目图标资源的组织和管理。
+强大的 SVG 图标库批量下载工具，支持多个主流图标库，配备 GUI 界面和嵌入式 SVG 图标系统。
 
-**项目类型：** 资源管理工具  
-**项目状态：** 活跃开发
+**项目类型：** 桌面实用工具  
+**版本：** v4.0.1
 
-## 📚 更多信息
+## ⚡ 核心功能
 
-详细的英文文档请查看 [README_en.md](./README_en.md)
+### 多平台图标库支持
+- Font Awesome
+- Material Design Icons
+- Bootstrap Icons
+- Feather Icons
+- 其他主流图标库
+
+### 批量下载功能
+- 关键词搜索
+- 分类浏览
+- 批量选择下载
+- 自定义文件名
+- 目录结构保持
+
+### 网络功能
+- 代理支持（HTTP/HTTPS/SOCKS5）
+- 连通性测试
+- 断点续传
+- 下载队列管理
+
+### 索引生成
+- 本地图标索引
+- JSON/HTML 索引
+- 预览页面生成
+- 搜索功能集成
+
+## 💡 技术亮点
+
+### GUI 界面
+- 现代化界面设计
+- 图标实时预览
+- 进度实时显示
+- 多任务并发下载
+
+### 嵌入式 SVG 系统
+- SVG 图标嵌入程序
+- 资源优化
+- 离线使用支持
+- 快速加载机制
+
+### 智能管理
+- 自动去重
+- 版本检测
+- 增量更新
+- 缓存机制
+
+## 🛠️ 技术栈
+
+- Python 3.x
+- GUI 框架
+- HTTP/HTTPS 客户端
+- SVG 处理库
+- 代理协议支持
+- Windows 打包
+
+## 📦 发布形式
+
+- Windows EXE 可执行文件
+- 免安装绿色版
+- 配置文件持久化
+- 自动更新检查
+
+## 🎯 使用场景
+
+- 前端开发图标准备
+- UI/UX 设计资源收集
+- 离线图标库建设
+- 项目图标快速选型
+
+## 📊 支持的图标库
+
+- ✅ Font Awesome (6000+ 图标)
+- ✅ Material Design Icons (5000+ 图标)
+- ✅ Bootstrap Icons (1800+ 图标)
+- ✅ Feather Icons (280+ 图标)
+- ✅ 其他自定义图标源
 
 ---
 
-*项目图标资源管理工具。*
+*GUI 应用工具，展示 Web 爬取和桌面应用开发能力。*

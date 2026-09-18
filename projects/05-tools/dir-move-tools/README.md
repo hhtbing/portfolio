@@ -1,38 +1,82 @@
 > [🏠 返回主页](https://github.com/hhtbing) | 中文 | [**English Documentation**](./README_en.md)
 
-# DIR-MOVE-TOOLS — 目录迁移工具
+# 目录迁移工具 — Windows 批量文件迁移
 
-> 中文 | [**English Documentation**](./README_en.md)
+![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20GUI-blue)
+![Version](https://img.shields.io/badge/Version-v2.0.0-green)
 
-![平台](https://img.shields.io/badge/平台-Windows-lightblue)
-![技术](https://img.shields.io/badge/技术-Python%20%7C%20Tkinter-green)
+## 📋 项目概述
 
-## 📋 项目概览
+Windows 桌面工具，用于批量迁移文件和目录，带有白名单保护和 GUI 界面。
 
-Windows 桌面工具，用符号链接迁移 AppData 等大目录，带事务恢复与完整性校验。
+**项目类型：** 桌面实用工具  
+**版本：** v2.0.0  
+**平台：** Windows
 
-**项目类型：** Windows 实用工具  
-**开发周期：** 2024  
-**项目状态：** 稳定版本
+## ⚡ 核心功能
 
-## ⚡ 核心特性
+### 批量迁移
+- 多目录同时迁移
+- 文件完整性校验
+- 进度实时显示
+- 断点续传支持
 
-- 符号链接目录迁移
-- 事务恢复机制
-- 完整性校验
-- Tkinter 图形界面
-- PyInstaller 打包
+### 安全保护
+- **白名单保护：** 防止误迁移系统关键目录
+- 目标路径验证
+- 操作前确认机制
+- 详细日志记录
+
+### GUI 界面
+- 直观的操作界面
+- 拖拽式文件选择
+- 实时进度展示
+- 错误提示和处理
+
+## 💡 技术亮点
+
+### 安全机制
+- 系统目录白名单检查
+- 路径合法性验证
+- 覆盖前二次确认
+- 操作可回滚设计
+
+### 性能优化
+- 多线程并行复制
+- 大文件分块处理
+- 智能跳过策略
+- 内存使用优化
 
 ## 🛠️ 技术栈
 
-- Python 3.11+
-- Tkinter
-- PyInstaller
+- Python 3.x
+- GUI 框架（Tkinter/PyQt）
+- 文件系统操作
+- 多线程处理
+- PyInstaller 打包
 
-## 📚 更多信息
+## 📦 发布形式
 
-详细的英文文档请查看 [README_en.md](./README_en.md)
+- Windows EXE 可执行文件
+- 免安装绿色版
+- 配置文件持久化
+- 日志自动归档
+
+## 🎯 使用场景
+
+- 系统盘清理迁移
+- 大批量文件整理
+- 用户数据迁移
+- 磁盘空间管理
+
+## 📝 白名单保护示例
+
+工具会自动阻止以下危险操作：
+- 迁移 `C:\Windows`
+- 迁移 `C:\Program Files`
+- 迁移系统用户目录
+- 迁移注册表相关目录
 
 ---
 
-*Windows 目录迁移工具，支持事务恢复和完整性校验。*
+*Windows 实用工具，展示桌面应用开发和文件系统操作能力。*

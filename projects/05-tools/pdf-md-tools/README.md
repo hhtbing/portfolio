@@ -2,19 +2,104 @@
 
 # PDF-MD-TOOLS — 文档转换工具
 
-> 中文 | [**English Documentation**](./README_en.md)
+![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20OCR-orange)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
 
-## 📋 项目概览
+## 📋 项目概述
 
-PDF 和 Markdown 文档转换工具，支持双向转换和批量处理。
+批量转换工具，将文档和图片转换为语义化 Markdown 格式。
 
-**项目类型：** 文档工具  
-**项目状态：** 稳定版本
+**项目类型：** 桌面实用工具  
+**技术栈：** Python、OCR、Markdown 处理
 
-## 📚 更多信息
+## ⚡ 核心功能
 
-详细的英文文档请查看 [README_en.md](./README_en.md)
+### 多格式文档解析
+- PDF 文档解析
+- Word 文档处理
+- 图片文本识别
+- 扫描文档 OCR
+- 混合格式处理
+
+### OCR 图片处理
+- 文字识别（中英文）
+- 表格识别
+- 公式识别
+- 图片提取
+- 版面分析
+
+### 语义 Markdown 生成
+- 标题层级识别
+- 段落结构保持
+- 列表自动识别
+- 表格转 Markdown
+- 代码块识别
+- 链接和图片处理
+
+### 批量处理功能
+- 文件夹批量转换
+- 断点续传支持
+- 进度保存和恢复
+- 错误日志记录
+- 结果预览
+
+## 💡 技术亮点
+
+### 智能识别
+- 文档结构分析
+- 语义元素提取
+- 格式自动推断
+- 样式保持优化
+
+### OCR 引擎
+- 高精度文字识别
+- 多语言支持
+- 版面分析算法
+- 图片预处理
+
+### 性能优化
+- 多线程并行处理
+- 内存占用优化
+- 大文件分块处理
+- 智能缓存机制
+
+## 🛠️ 技术栈
+
+- Python 3.x
+- OCR 库（Tesseract/PaddleOCR）
+- PDF 解析库（PyPDF2/pdfplumber）
+- Markdown 处理
+- 图像预处理（OpenCV/PIL）
+- PyInstaller 打包
+
+## 📦 发布形式
+
+- Windows EXE 可执行文件
+- 配置文件支持
+- 模板自定义
+- 日志系统
+
+## 🎯 使用场景
+
+- 论文文档整理
+- 知识库建设
+- 笔记数字化
+- 文档迁移转换
+- 内容管理系统对接
+
+## 📊 支持格式
+
+**输入格式：**
+- PDF（文本/图片/混合）
+- Word（.doc/.docx）
+- 图片（.jpg/.png/.bmp）
+- 扫描文档
+
+**输出格式：**
+- Markdown (.md)
+- 附带图片提取
+- 元数据保留
 
 ---
 
-*PDF 和 Markdown 文档双向转换工具。*
+*文档处理工具，展示 OCR 集成和文档处理能力。*
