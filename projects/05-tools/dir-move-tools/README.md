@@ -1,19 +1,46 @@
-# DIR-MOVE-TOOLS — Windows 目录迁移工具 / DIR-MOVE-TOOLS — Windows Directory Migration
+# DIR-MOVE-TOOLS - Windows Directory Migration
 
-> Windows 瘦身 C 盘的工具：使用符号链接将 AppData 等大体积目录迁移到另一磁盘，完整保留目录层级并对应用透明。
+![Platform](https://img.shields.io/badge/Platform-Windows-lightblue)
+![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20Tkinter%20%7C%20PyInstaller-blue)
 
-> Windows C-drive slim-down tool: uses symbolic links to relocate large directories like AppData to another disk, preserving hierarchy and staying transparent to apps.
+## 📋 Project Overview
 
-- 类别 Category：开发工具 / Developer Tools
-- 状态 Status：v1.9.2 已发布，用于解决系统盘空间不足问题。 / v1.9.2 released for system-drive space issues.
-- 技术栈 Tech Stack：Python 3.9+、Tkinter、PyInstaller、Windows API、GitHub Actions
+Windows desktop tool for migrating AppData and large directories using symbolic links (directory junctions), with UAC elevation, whitelist protection, transaction recovery, and SHA-256 integrity verification.
 
-## 🌐 交互式双语页面 / Interactive Bilingual Page
+**Version:** v1.9.2  
+**Updated:** 2026-07-15  
+**Requirements:** Windows 10/11 x64
 
-点击打开可切换 **中文 / English** 的完整项目页面：
-Open the full project page with **中文 / English** switching:
+## ⚡ Core Features
 
-👉 [https://hhtbing.github.io/portfolio/projects/05-tools/dir-move-tools/](https://hhtbing.github.io/portfolio/projects/05-tools/dir-move-tools/)
+- **Symbolic Link Migration:** Use directory junctions to relocate AppData to another disk
+- **UAC Elevation:** Automatic administrator privilege request
+- **Whitelist Protection:** Prevent accidental migration of system-critical directories
+- **Transaction Recovery:** Automatic rollback on failure
+- **Integrity Verification:** SHA-256 checksum validation
+- **GUI Interface:** User-friendly Windows desktop application
+- **Professional Packaging:** PyInstaller EXE with Windows CI
+
+## 🎯 Use Case
+
+Windows C: drive space optimization by moving large directories (AppData, etc.) to secondary drives while maintaining complete directory hierarchy, transparent to applications.
+
+## 🛠️ Tech Stack
+
+- Python 3.9+
+- Tkinter (GUI)
+- PyInstaller (EXE packaging)
+- Windows API
+- GitHub Actions (CI/CD)
+
+## 📊 Features
+
+- Directory size calculation and estimation
+- Real-time progress tracking
+- Error handling and rollback
+- System safety checks
+- Detailed logging
 
 ---
-[返回作品集 / Back to Portfolio](https://hhtbing.github.io/portfolio/)
+
+*Practical Windows utility demonstrating desktop application development and system-level operations.*
