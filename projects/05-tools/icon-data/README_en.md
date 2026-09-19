@@ -38,6 +38,36 @@ Powerful SVG icon library batch download tool supporting multiple mainstream ico
 - Preview page creation
 - Search functionality integration
 
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    GUI Layer                             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐              │
+│  │Search    │  │Preview   │  │Download  │              │
+│  │Panel     │  │Window    │  │Queue     │              │
+└──┴──────────┴──┴──────────┴──┴──────────┴──────────────┘
+         │              │              │
+┌────────▼──────────────▼──────────────▼──────────────────┐
+│                  Download Manager                        │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │Icon Library  │  │Proxy         │  │Resume        │  │
+│  │Adapter       │  │Manager       │  │Support       │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │Batch         │  │SVG           │  │Index         │  │
+│  │Download      │  │Processing    │  │Generation    │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                  ┌────────▼────────┐
+                  │ Icon Library    │
+                  │ API Layer       │
+                  │ (HTTP/HTTPS)    │
+                  └─────────────────┘
+```
+
 ## 💡 Technical Highlights
 
 ### GUI Interface

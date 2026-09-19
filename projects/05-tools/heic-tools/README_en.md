@@ -32,6 +32,35 @@ Windows desktop tool for viewing and converting HEIC (High Efficiency Image Cont
 - Error handling and skip
 - Output directory customization
 
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    GUI Layer                             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐              │
+│  │File      │  │Image     │  │Convert   │              │
+│  │Browser   │  │Preview   │  │Panel     │              │
+└──┴──────────┴──┴──────────┴──┴──────────┴──────────────┘
+         │              │              │
+┌────────▼──────────────▼──────────────▼──────────────────┐
+│                  Image Processing Engine                 │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │HEIC          │  │Color Space   │  │Quality       │  │
+│  │Decoder       │  │Conversion    │  │Control       │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │Batch         │  │Metadata      │  │Progress      │  │
+│  │Convert       │  │Extraction    │  │Manager       │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                  ┌────────▼────────┐
+                  │  File System    │
+                  │  Operations     │
+                  └─────────────────┘
+```
+
 ## 💡 Technical Highlights
 
 ### Image Processing

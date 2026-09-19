@@ -33,6 +33,35 @@ Windows desktop tool for batch file and directory migration with whitelist prote
 - Real-time progress display
 - Error prompts and handling
 
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    GUI Layer                             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐              │
+│  │File      │  │Progress  │  │Config    │              │
+│  │Selector  │  │Display   │  │Panel     │              │
+└──┴──────────┴──┴──────────┴──┴──────────┴──────────────┘
+         │              │              │
+┌────────▼──────────────▼──────────────▼──────────────────┐
+│                  Core Processing Engine                  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │Whitelist     │  │Path          │  │Integrity     │  │
+│  │Validator     │  │Checker       │  │Verification  │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │Multi-thread  │  │Resume        │  │Logging       │  │
+│  │Copy          │  │Support       │  │System        │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                  ┌────────▼────────┐
+                  │  File System    │
+                  │  Operations     │
+                  └─────────────────┘
+```
+
 ## 💡 Technical Highlights
 
 ### Security Mechanisms

@@ -32,6 +32,40 @@ Batch BGM generation tool using MuseScore command-line export to generate 10 "We
 - Rhythm patterns
 - Chord progressions
 
+
+## 🏗️ Music Generation Flow
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                  Requirement Analysis                    │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐              │
+│  │Style     │  │Duration  │  │Instrument│              │
+│  │Definition│  │Config    │  │Selection │              │
+└──┴──────────┴──┴──────────┴──┴──────────┴──────────────┘
+         │              │              │
+┌────────▼──────────────▼──────────────▼──────────────────┐
+│                  Music Generation Engine                 │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │Melody        │  │Harmony       │  │Rhythm        │  │
+│  │Generator     │  │Design        │  │Pattern       │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+│  ┌──────────────┐  ┌──────────────┐                    │
+│  │MusicXML      │  │MIDI          │                    │
+│  │Generation    │  │Generation    │                    │
+│  └──────────────┘  └──────────────┘                    │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                  ┌────────▼────────┐
+                  │  MuseScore CLI  │
+                  │  (MP3 Export)   │
+                  └────────┬────────┘
+                           │
+                  ┌────────▼────────┐
+                  │  Output File    │
+                  │  Validation     │
+                  └─────────────────┘
+```
+
 ## 💡 Technical Highlights
 
 ### Automation Pipeline

@@ -39,6 +39,35 @@ Medical terminology dictionary management system based on FHIR standard, support
 - Hierarchical filtering
 - Batch query API
 
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    API Layer                             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐              │
+│  │Code      │  │Validation│  │Mapping   │              │
+│  │Query     │  │Service   │  │Config    │              │
+└──┴──────────┴──┴──────────┴──┴──────────┴──────────────┘
+         │              │              │
+┌────────▼──────────────▼──────────────▼──────────────────┐
+│                  Core Service Layer                      │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │JSON Schema   │  │FHIR Coding   │  │Device        │  │
+│  │Validation    │  │System        │  │Mapping       │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │Unit          │  │Cache         │  │Batch         │  │
+│  │Conversion    │  │Management    │  │Processing    │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                  ┌────────▼────────┐
+                  │  Medical Device │
+                  │  Data (FHIR)    │
+                  └─────────────────┘
+```
+
 ## 💡 Technical Highlights
 
 ### Medical Terminology Processing
