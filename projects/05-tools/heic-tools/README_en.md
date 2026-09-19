@@ -1,8 +1,9 @@
 > 🏠 [Back to Homepage](https://github.com/hhtbing) | [中文](./README.md) / **English**
 
-# HEIC-TOOLS - HEIC Image Viewer & Converter
+# HEIC Tools — Apple Image Format Viewer
 
-![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20WPF-purple)
+![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20Image%20Processing-orange)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
 
 ## 📋 Project Overview
 
@@ -11,20 +12,71 @@ Windows desktop tool for viewing and converting HEIC (High Efficiency Image Cont
 **Project Type:** Desktop Utility  
 **Platform:** Windows
 
-## ⚡ Features
+## ⚡ Core Features
 
-### heic-viewer - Image Viewer
+### HEIC Viewing
+- Image thumbnail preview
+- Full-size image display
+- Image metadata viewing
+- Batch browsing support
 
-### heic-file - Test Files
-- Sample HEIC files for testing viewer functionality
+### Format Conversion
+- HEIC to JPG/PNG conversion
+- Batch conversion support
+- Adjustable quality parameters
+- Preserve EXIF metadata
 
-## 🎯 Use Case
+### Batch Processing
+- Folder batch conversion
+- Conversion progress display
+- Error handling and skip
+- Output directory customization
 
-Windows users who need to view and process HEIC format photos taken with iPhone/iPad without format conversion.
+## 💡 Technical Highlights
+
+### Image Processing
+- Format conversion engine
+- Color space management
+- Image quality optimization
+- Memory-efficient processing
+
+### User Experience
+- Drag-and-drop operation
+- Preview and conversion integration
+- Clean interface design
+- Fast processing speed
 
 ## 🛠️ Tech Stack
 
+**Core Technologies:**
+- Python (core development)
+- Pillow/PIL (image processing)
+- HEIF/HEIC decoder
+
+**GUI Framework:**
+- Tkinter/PyQt
+- Modern UI components
+
+## 📦 Distribution
+
+- PyInstaller standalone executable
+- No dependencies required
+- One-click installation
+
+## 📱 Application Scenarios
+
+- Cross-platform image sharing
+- Windows viewing Apple photos
+- Batch format conversion
+- Image backup and archiving
+
+## 🎯 Problem Solved
+
+- Windows native lack of HEIC support
+- Simplify batch conversion workflow
+- Preserve image quality during conversion
+- Fast local processing without upload
 
 ---
 
-*Utility demonstrating image format handling and Windows desktop development.*
+*Windows desktop tool solving Apple device image format compatibility issues.*

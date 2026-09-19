@@ -2,90 +2,174 @@
 
 # OwlCare — 智能监护系统
 
-> 中文 | [**English Documentation**](./README_en.md)
-
 ![状态](https://img.shields.io/badge/状态-生产环境-success)
-![技术](https://img.shields.io/badge/技术-Android%20%7C%20iOS%20%7C%20BLE-green)
+![技术](https://img.shields.io/badge/技术-Android%20%7C%20BLE-green)
 
 ## 📋 项目概览
 
-OwlCare 是一个综合性多平台健康监护产品仓库，集中维护 Android、iOS、设备配置工具、代理桥接工具、升级发布后台、CI/CD 工作流和项目文档。
+OwlCare 是一个智能健康监护系统，**本人主要负责 Android 应用开发**，包含独立设备配置工具、代理桥接工具和自建 OTA 升级后台。iOS 版本作为参考对比学习。
 
-本仓库面向实际产品交付，而非单一应用模板。
+本仓库集中维护多个子系统的开发成果和技术文档。
 
-**项目类型：** 多平台移动应用  
+**项目类型：** 移动应用生态系统  
 **开发周期：** 2023 年至今  
-**团队规模：** 团队项目  
-**项目状态：** 生产环境，有活跃用户
+**本人职责：** Android 应用开发 + 工具开发 + OTA 后台  
+**项目状态：** 生产环境，已上线 Google Play
+
+🔗 **Google Play:** https://play.google.com/store/apps/details?id=com.wisefido.owlmonitor
 
 ## 🎯 系统组件
 
-| 模块 | 路径 | 技术栈 | 主要职责 |
-|------|------|--------|---------|
-| OwlCare Android | `project-code/Android_OwlCare_google_play` | Kotlin, Jetpack Compose, Hilt | Android 主应用，包含登录、监护、告警、雷达、睡眠、设置、设备配置和 Google Play 更新 |
-| OwlCare iOS | `project-code/ios-owlCare-update` | Swift, UIKit, CocoaPods | iPhone 和 Apple Watch 客户端，支持跨平台交互 |
-| ConfigureTool | `project-code/ConfigureTool` | Kotlin, Jetpack Compose, BLE/Wi-Fi SDK | 独立设备配置工具，支持二维码扫描、BLE 发现和 Wi-Fi 配网 |
-| OwlProxyBridge | `project-code/OwlProxyBridge` | Java, Android SDK | Android 代理桥接工具，通过 GitHub Actions 正式构建 |
-| OwlCare Update Hub | `project-code/OwlCareUpdateHub` | Python, FastAPI, Uvicorn, Docker | APK 发布、自托管更新、Google Play 交接、敏感发布资产和审计管理 |
+| 模块 | 技术栈 | 本人工作 |
+|------|--------|---------|
+| **OwlCare Android** | Kotlin, Jetpack Compose, Hilt | ✅ 主要开发：登录、监护、告警、雷达数据可视化、睡眠分析、设备配置、Google Play 更新集成 |
+| **ConfigureTool** | Kotlin, Jetpack Compose, BLE/Wi-Fi SDK | ✅ 独立开发：二维码扫描、BLE 设备发现、Wi-Fi 配网工具 |
+| **OwlProxyBridge** | Java, Android SDK | ✅ 开发：代理桥接工具，通过 GitHub Actions 自动构建 |
+| **Update Hub** | Python, FastAPI, Uvicorn, Docker | ✅ 搭建：自托管 APK 发布系统、版本管理、更新审计 |
+| OwlCare iOS | Swift, UIKit | 📖 参考学习：对比 iOS 开发模式和用户体验设计 |
 
-## 🏗️ 产品与发布架构
+## 🏗️ 系统架构
 
 ```
-用户 → OwlCare Android/iOS
-         ↓
-    业务 API
-         ↓
-  Google Play / Update Hub
-         ↓
-    设备（BLE/Wi-Fi）
+┌─────────────────────────────────────────────────────────────┐
+│                     OwlCare 系统                             │
+└─────────────────────────────────────────────────────────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+        ▼                     ▼                     ▼
+┌───────────────┐    ┌───────────────┐    ┌───────────────┐
+│ Android 主应用 │    │ 配置工具      │    │ OTA 后台      │
+│ (Google Play) │    │ (独立 APK)    │    │ (Update Hub)  │
+└───────────────┘    └───────────────┘    └───────────────┘
+        │                     │                     │
+        ▼                     ▼                     ▼
+   实时监护            设备配网            版本管理
+   数据可视化          BLE/Wi-Fi          自动更新
+   推送通知            二维码扫描          审计日志
 ```
 
-当前 Android 主应用使用包名 `com.wisefido.owlmonitor`，以 Google Play 作为主要发布渠道。Update Hub 处理自托管更新、发布信息同步、后台配置和审计职责。
+## ⚡ 核心功能
 
-## ⚡ 核心特性
+### Android 主应用
+- **实时监护仪表板** - 多维度健康数据展示
+- **智能告警系统** - FCM 推送通知，实时异常提醒
+- **雷达数据可视化** - 毫米波雷达数据实时图表
+- **睡眠质量分析** - 睡眠监测和质量评估
+- **设备配置管理** - 设备绑定、参数设置
+- **生物识别认证** - 指纹/面部识别登录
 
-### Android 应用
-- 实时监护仪表板
-- 告警系统，带 FCM 推送通知
-- 雷达数据可视化
-- 睡眠质量分析
-- 设备配置和管理
-- 生物识别认证
+### 独立配置工具 (ConfigureTool)
+- **二维码扫描** - 快速设备识别和绑定
+- **BLE 设备发现** - 自动扫描附近蓝牙设备
+- **Wi-Fi 配网** - 一键完成设备网络配置
+- **参数配置** - 设备工作参数设置
 
-### iOS 应用
-- 实时数据同步
-- 推送通知
+### 代理桥接工具 (OwlProxyBridge)
+- **协议转换** - 设备协议到标准 API 的桥接
+- **数据转发** - 实时数据流转发
+- **自动构建** - GitHub Actions CI/CD
 
-### 设备配置
-- 二维码扫描设备发现
-- 设备参数配置
+### OTA 升级后台 (Update Hub)
+- **版本管理** - APK 版本控制和发布管理
+- **自托管更新** - 内部测试版本分发
+- **Google Play 集成** - 正式版本发布协调
+- **更新审计** - 完整的更新日志和审计追踪
+
+## 💡 技术亮点
+
+### Android 开发
+- **Jetpack Compose** - 现代化声明式 UI
+- **Hilt 依赖注入** - 模块化架构
+- **Room 数据库** - 本地数据持久化
+- **Kotlin Coroutines** - 异步编程和流式数据处理
+
+### BLE 通信
+- **设备发现和配对** - 低功耗蓝牙设备管理
+- **数据实时传输** - 高效的 BLE 数据通道
+- **Wi-Fi 配网** - BLE + Wi-Fi 混合配网方案
 
 ### OTA 系统
-- 自托管更新后台
-- APK 版本管理
-- 发布审批流程
-- 更新统计和审计日志
+- **自动化构建** - GitHub Actions 构建流水线
+- **版本控制** - 语义化版本管理
+- **增量更新** - 减少更新包大小
+- **回滚机制** - 更新失败自动回退
 
 ## 🛠️ 技术栈详情
 
-### Android
-- `compileSdk 35`, `targetSdk 35`, `minSdk 26`, JDK 17
+**Android 开发：**
+- Kotlin (主语言)
+- Jetpack Compose (UI 框架)
+- Hilt (依赖注入)
+- Room (数据库)
+- Retrofit + OkHttp (网络请求)
+- Firebase Cloud Messaging (推送通知)
 
-### iOS
+**BLE & 设备通信：**
+- Android BLE API
+- Wi-Fi Direct / Wi-Fi Provisioning
+- 自定义通信协议
 
-### Update Hub
-- JSON 和挂载目录持久化
+**OTA 后台：**
+- Python + FastAPI
+- Uvicorn (ASGI 服务器)
+- Docker (容器化部署)
+- SQLite (版本数据库)
 
-## 💡 设计决策
+**开发工具：**
+- Android Studio
+- Git + GitHub Actions
+- Postman (API 测试)
 
-此组合扩展了仓库的现有架构：
-- 移动端保持原生体验和设备能力
-- 独立工具按设备访问边界分离
-- 避免将所有能力耦合到主应用
+## 📱 应用架构
 
-## 🔗 发布渠道
+### Android 主应用模块
+```
+app/
+├── ui/              # Jetpack Compose UI 层
+├── viewmodel/       # MVVM ViewModel
+├── repository/      # 数据仓库层
+├── data/            # 数据模型和数据源
+├── network/         # 网络请求
+├── ble/             # BLE 通信
+├── util/            # 工具类
+└── di/              # Hilt 依赖注入
+```
 
+### 配置工具 (ConfigureTool)
+```
+configuretool/
+├── scanner/         # 二维码扫描
+├── ble/             # BLE 设备发现
+├── wifi/            # Wi-Fi 配网
+└── ui/              # 独立 UI
+```
+
+## 🎯 开发重点
+
+### 我负责开发的核心模块
+1. **Android 主应用** - 完整的移动端开发
+2. **ConfigureTool** - 独立配置工具设计和实现
+3. **OwlProxyBridge** - 协议桥接和数据转发
+4. **Update Hub** - 自建 OTA 升级系统
+
+### 学习参考
+- iOS 版本用于对比学习跨平台开发差异
+- 学习 Swift 和 iOS 开发模式
+
+## 🔗 相关链接
+
+- **Google Play 下载：** https://play.google.com/store/apps/details?id=com.wisefido.owlmonitor
+- **包名：** com.wisefido.owlmonitor
+
+## 💼 本人职责总结
+
+- ✅ Android 主应用完整开发
+- ✅ BLE 设备配网工具开发
+- ✅ 代理桥接工具开发
+- ✅ 自建 OTA 升级后台搭建
+- 📖 iOS 版本参考学习
 
 ---
 
-*这是一个生产环境的移动健康监护系统，展示了原生应用开发、BLE 集成和自托管 OTA 管理。*
+*本项目展示了 Android 应用开发、BLE 通信、自建 OTA 系统的完整技术能力。*

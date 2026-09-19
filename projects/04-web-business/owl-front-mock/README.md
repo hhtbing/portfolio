@@ -5,6 +5,8 @@
 ![Tech](https://img.shields.io/badge/Tech-Vue%20%7C%20JavaScript-green)
 ![Status](https://img.shields.io/badge/Status-Demo-orange)
 
+🔗 **在线演示：** https://demo.wisefido.com/
+
 ## 📋 项目概述
 
 老年护理监测系统的演示前端，展示健康监控仪表板和数据可视化功能。

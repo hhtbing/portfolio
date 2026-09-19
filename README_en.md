@@ -2,7 +2,7 @@
 
 > [**中文**](./README.md) | English
 
-This is Benson's project portfolio repository, containing 19 public projects across 7 technology domains.
+This is Benson's project portfolio repository, containing 17 projects across 7 technology domains.
 
 ## 📂 Repository Organization
 
@@ -19,7 +19,7 @@ This repository is organized with **Chinese-first, bilingual cross-linking**:
 - [Codex Host Bridge](./projects/01-ai-platform/codex-bridge) - Remote Development Bridge
 
 ### 📱 Mobile Applications
-- [OwlCare](./projects/02-mobile/owlcare) - Smart Health Monitoring System
+- [OwlCare](./projects/02-mobile/owlcare) - Smart Monitoring System (Android App + Config Tools + OTA Backend)
 
 ### 🔬 IoT & Embedded
 - [OTA-QL](./projects/03-iot-embedded/ota-system) - Radar OTA Management System
@@ -27,9 +27,8 @@ This repository is organized with **Chinese-first, bilingual cross-linking**:
 - [TI Radar Development Platform](./projects/03-iot-embedded/ti-radar-dev) - Historical Reference
 
 ### 🌐 Web & Business Systems
-- [Owl Website](./projects/04-web-business/owl-website) - Official Website
-- [OwlFront Mock](./projects/04-web-business/owl-front-mock) - Frontend Demo
-- [Server Move](./projects/04-web-business/server-move) - Server Migration
+- [Owl Website](./projects/04-web-business/owl-website) - Corporate Website System ([https://www.wisefido.com/](https://www.wisefido.com/))
+- [OwlFront Mock](./projects/04-web-business/owl-front-mock) - Frontend Demo System ([https://demo.wisefido.com/](https://demo.wisefido.com/))
 - [Codex Mobile Control](./projects/04-web-business/codex-mobile-control) - Mobile Control
 
 ### 🔧 Tools & Utilities
@@ -43,9 +42,8 @@ This repository is organized with **Chinese-first, bilingual cross-linking**:
 - [FHIR Coding Dictionary](./projects/06-data/fhir-coding-dictionary) - Medical Coding Dictionary
 
 ### 🎮 Other Projects
-- [Game Snake](./projects/07-others/game-snake) - Snake Game
-- [Resume Evidence](./projects/07-others/resume-evidence) - Resume Evidence Management
-- [Music MuseScore](./projects/07-others/music-musescore) - Score Management
+- [Game Snake](./projects/07-others/game-snake) - WeChat Mini Game
+- [Music MuseScore](./projects/07-others/music-musescore) - BGM Batch Generator
 
 ## 🚀 Access Methods
 

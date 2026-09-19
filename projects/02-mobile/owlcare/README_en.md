@@ -1,77 +1,175 @@
 > 🏠 [Back to Homepage](https://github.com/hhtbing) | [中文](./README.md) / **English**
 
-# OwlCare - Smart Health Monitoring System
+# OwlCare — Smart Health Monitoring System
 
 ![Status](https://img.shields.io/badge/Status-Production-success)
-![Tech](https://img.shields.io/badge/Tech-Android%20%7C%20iOS%20%7C%20BLE-green)
+![Tech](https://img.shields.io/badge/Tech-Android%20%7C%20BLE-green)
 
 ## 📋 Project Overview
 
-OwlCare is a comprehensive multi-platform health monitoring product repository, centrally maintaining Android, iOS, device configuration tools, proxy bridge tools, upgrade release backend, CI/CD workflows, and project documentation.
+OwlCare is a smart health monitoring system. **I am primarily responsible for Android application development**, including independent device configuration tools, proxy bridge tools, and self-hosted OTA upgrade backend. The iOS version is referenced for cross-platform learning and comparison.
 
-This repository is oriented toward actual product delivery, not a single application template.
+This repository centrally maintains development achievements and technical documentation for multiple subsystems.
 
-**Project Type:** Multi-Platform Mobile Application  
-**Development Period:** 2023-Present  
-**Team Size:** Team Project  
-**Project Status:** Production with Active Users
+**Project Type:** Mobile Application Ecosystem  
+**Development Cycle:** 2023-Present  
+**My Responsibilities:** Android Development + Tools Development + OTA Backend  
+**Project Status:** Production, Live on Google Play
+
+🔗 **Google Play:** https://play.google.com/store/apps/details?id=com.wisefido.owlmonitor
 
 ## 🎯 System Components
 
-| Module | Path | Tech Stack | Main Responsibilities |
-|--------|------|-----------|----------------------|
-| OwlCare Android | `project-code/Android_OwlCare_google_play` | Kotlin, Jetpack Compose, Hilt | Main Android app with login, monitoring, alerts, radar, sleep, settings, device config, and Google Play updates |
-| OwlCare iOS | `project-code/ios-owlCare-update` | Swift, UIKit, CocoaPods | iPhone & Apple Watch clients with cross-platform interaction |
-| ConfigureTool | `project-code/ConfigureTool` | Kotlin, Jetpack Compose, BLE/Wi-Fi SDK | Independent device configuration tool for QR scanning, BLE discovery, and Wi-Fi provisioning |
-| OwlProxyBridge | `project-code/OwlProxyBridge` | Java, Android SDK | Android proxy bridge tool; formal builds via GitHub Actions |
-| OwlCare Update Hub | `project-code/OwlCareUpdateHub` | Python, FastAPI, Uvicorn, Docker | APK release, self-hosted updates, Google Play handoff, sensitive release assets, and audit management |
+| Module | Tech Stack | My Work |
+|--------|-----------|---------|
+| **OwlCare Android** | Kotlin, Jetpack Compose, Hilt | ✅ Primary Development: Login, monitoring, alerts, radar data visualization, sleep analysis, device configuration, Google Play update integration |
+| **ConfigureTool** | Kotlin, Jetpack Compose, BLE/Wi-Fi SDK | ✅ Independent Development: QR code scanning, BLE device discovery, Wi-Fi provisioning tool |
+| **OwlProxyBridge** | Java, Android SDK | ✅ Development: Protocol bridge and data forwarding, automated builds via GitHub Actions |
+| **Update Hub** | Python, FastAPI, Uvicorn, Docker | ✅ Setup: Self-hosted APK release system, version management, update auditing |
+| OwlCare iOS | Swift, UIKit | 📖 Learning Reference: Compare iOS development patterns and UX design |
 
-## 🏗️ Product & Release Architecture
+## 🏗️ System Architecture
 
 ```
-User → OwlCare Android/iOS
-         ↓
-    Business API
-         ↓
-  Google Play / Update Hub
-         ↓
-    Device (BLE/Wi-Fi)
+┌─────────────────────────────────────────────────────────────┐
+│                     OwlCare System                           │
+└─────────────────────────────────────────────────────────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+        ▼                     ▼                     ▼
+┌───────────────┐    ┌───────────────┐    ┌───────────────┐
+│ Android App   │    │ Config Tool   │    │ OTA Backend   │
+│ (Google Play) │    │ (Standalone)  │    │ (Update Hub)  │
+└───────────────┘    └───────────────┘    └───────────────┘
+        │                     │                     │
+        ▼                     ▼                     ▼
+Real-time Monitor    Device Provisioning    Version Mgmt
+Data Visualization   BLE/Wi-Fi Config       Auto Updates
+Push Notifications   QR Code Scanning       Audit Logs
 ```
-
-Current Android main app uses package name `com.wisefido.owlmonitor`, with Google Play as the primary release channel. Update Hub handles self-hosted updates, release information sync, backend configuration, and audit responsibilities.
 
 ## ⚡ Core Features
 
 ### Android Application
+- **Real-time Monitoring Dashboard** - Multi-dimensional health data display
+- **Smart Alert System** - FCM push notifications for real-time anomaly alerts
+- **Radar Data Visualization** - Real-time charts for mmWave radar data
+- **Sleep Quality Analysis** - Sleep monitoring and quality assessment
+- **Device Configuration Management** - Device binding and parameter setup
+- **Biometric Authentication** - Fingerprint/face recognition login
 
-### iOS Application
+### Independent Configuration Tool (ConfigureTool)
+- **QR Code Scanning** - Quick device identification and binding
+- **BLE Device Discovery** - Auto-scan nearby Bluetooth devices
+- **Wi-Fi Provisioning** - One-click device network configuration
+- **Parameter Configuration** - Device working parameter setup
 
-### Device Configuration
+### Proxy Bridge Tool (OwlProxyBridge)
+- **Protocol Conversion** - Bridge device protocols to standard APIs
+- **Data Forwarding** - Real-time data stream forwarding
+- **Automated Builds** - GitHub Actions CI/CD
+
+### OTA Upgrade Backend (Update Hub)
+- **Version Management** - APK version control and release management
+- **Self-hosted Updates** - Internal test version distribution
+- **Google Play Integration** - Coordinated formal version releases
+- **Update Auditing** - Complete update logs and audit trails
+
+## 💡 Technical Highlights
+
+### Android Development
+- **Jetpack Compose** - Modern declarative UI
+- **Hilt Dependency Injection** - Modular architecture
+- **Room Database** - Local data persistence
+- **Kotlin Coroutines** - Asynchronous programming and reactive data streams
+
+### BLE Communication
+- **Device Discovery and Pairing** - Low-energy Bluetooth device management
+- **Real-time Data Transfer** - Efficient BLE data channels
+- **Wi-Fi Provisioning** - Hybrid BLE + Wi-Fi provisioning solution
 
 ### OTA System
+- **Automated Builds** - GitHub Actions build pipeline
+- **Version Control** - Semantic versioning
+- **Incremental Updates** - Reduced update package size
+- **Rollback Mechanism** - Auto-revert on update failure
 
 ## 🛠️ Tech Stack Details
 
-### Android
-- `compileSdk 35`, `targetSdk 35`, `minSdk 26`, JDK 17
+**Android Development:**
+- Kotlin (Primary Language)
+- Jetpack Compose (UI Framework)
+- Hilt (Dependency Injection)
+- Room (Database)
+- Retrofit + OkHttp (Networking)
+- Firebase Cloud Messaging (Push Notifications)
 
-### iOS
+**BLE & Device Communication:**
+- Android BLE API
+- Wi-Fi Direct / Wi-Fi Provisioning
+- Custom Communication Protocols
 
-### Update Hub
-- Multi-architecture images via GitHub Container Registry
+**OTA Backend:**
+- Python + FastAPI
+- Uvicorn (ASGI Server)
+- Docker (Containerized Deployment)
+- SQLite (Version Database)
 
-## 💡 Design Decisions
+**Development Tools:**
+- Android Studio
+- Git + GitHub Actions
+- Postman (API Testing)
 
-This combination extends the repository's existing architecture:
-- Mobile maintains native experience and device capabilities
-- Release backend uses lightweight Python service to reduce deployment complexity
-- Independent tools separated by device access boundaries
-- Avoids coupling all capabilities into the main app
+## 📱 Application Architecture
 
-## 🔗 Release Channels
+### Android Main App Modules
+```
+app/
+├── ui/              # Jetpack Compose UI layer
+├── viewmodel/       # MVVM ViewModel
+├── repository/      # Data repository layer
+├── data/            # Data models and data sources
+├── network/         # Network requests
+├── ble/             # BLE communication
+├── util/            # Utility classes
+└── di/              # Hilt dependency injection
+```
 
-- **GitHub Actions:** Automated builds and releases
+### Configuration Tool (ConfigureTool)
+```
+configuretool/
+├── scanner/         # QR code scanning
+├── ble/             # BLE device discovery
+├── wifi/            # Wi-Fi provisioning
+└── ui/              # Standalone UI
+```
+
+## 🎯 Development Focus
+
+### Core Modules I Developed
+1. **Android Main App** - Complete mobile development
+2. **ConfigureTool** - Independent configuration tool design and implementation
+3. **OwlProxyBridge** - Protocol bridging and data forwarding
+4. **Update Hub** - Self-hosted OTA upgrade system
+
+### Learning Reference
+- iOS version for cross-platform development comparison
+- Learning Swift and iOS development patterns
+
+## 🔗 Related Links
+
+- **Google Play Download:** https://play.google.com/store/apps/details?id=com.wisefido.owlmonitor
+- **Package Name:** com.wisefido.owlmonitor
+
+## 💼 My Responsibilities Summary
+
+- ✅ Complete Android main app development
+- ✅ BLE device provisioning tool development
+- ✅ Proxy bridge tool development
+- ✅ Self-hosted OTA upgrade backend setup
+- 📖 iOS version reference learning
 
 ---
 
-*This is a production mobile health monitoring system demonstrating native app development, BLE integration, and self-hosted OTA management.*
+*This project demonstrates complete technical capabilities in Android app development, BLE communication, and self-hosted OTA systems.*

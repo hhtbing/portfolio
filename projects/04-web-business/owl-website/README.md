@@ -5,6 +5,8 @@
 ![Tech](https://img.shields.io/badge/Tech-Node.js%20%7C%20Express%20%7C%20Docker-blue)
 ![Status](https://img.shields.io/badge/Status-Production-success)
 
+🔗 **在线访问：** https://www.wisefido.com/
+
 ## 📋 项目概述
 
 WiseFido 官方网站和营销站点，配备 CMS 后台进行内容管理。

@@ -2,7 +2,7 @@
 
 > 中文 | [**English**](./README_en.md)
 
-这是 Benson 的项目作品集仓库，包含 19 个公开项目，横跨 7 大技术领域。
+这是 Benson 的项目作品集仓库，包含 17 个项目，横跨 7 大技术领域。
 
 ## 📂 仓库组织
 
@@ -19,7 +19,7 @@
 - [Codex Host Bridge](./projects/01-ai-platform/codex-bridge) - 远程开发桥接
 
 ### 📱 移动应用类
-- [OwlCare](./projects/02-mobile/owlcare) - 智能监护系统
+- [OwlCare](./projects/02-mobile/owlcare) - 智能监护系统（Android 应用 + 配置工具 + OTA 后台）
 
 ### 🔬 物联网与嵌入式
 - [OTA-QL](./projects/03-iot-embedded/ota-system) - 雷达 OTA 管理系统
@@ -27,9 +27,8 @@
 - [TI 雷达开发平台](./projects/03-iot-embedded/ti-radar-dev) - 历史参考项目
 
 ### 🌐 Web 与业务系统
-- [Owl Website](./projects/04-web-business/owl-website) - 官网
-- [OwlFront Mock](./projects/04-web-business/owl-front-mock) - 前端演示
-- [Server Move](./projects/04-web-business/server-move) - 服务器迁移
+- [Owl Website](./projects/04-web-business/owl-website) - 企业官网系统 ([https://www.wisefido.com/](https://www.wisefido.com/))
+- [OwlFront Mock](./projects/04-web-business/owl-front-mock) - 前端演示系统 ([https://demo.wisefido.com/](https://demo.wisefido.com/))
 - [Codex Mobile Control](./projects/04-web-business/codex-mobile-control) - 移动端控制
 
 ### 🔧 工具与实用程序
@@ -43,9 +42,8 @@
 - [FHIR Coding Dictionary](./projects/06-data/fhir-coding-dictionary) - 医疗编码字典
 
 ### 🎮 其他项目
-- [Game Snake](./projects/07-others/game-snake) - 贪吃蛇游戏
-- [Resume Evidence](./projects/07-others/resume-evidence) - 简历证据管理
-- [Music MuseScore](./projects/07-others/music-musescore) - 乐谱管理
+- [Game Snake](./projects/07-others/game-snake) - 微信小游戏
+- [Music MuseScore](./projects/07-others/music-musescore) - BGM 批量生成工具
 
 ## 🚀 访问方式
 

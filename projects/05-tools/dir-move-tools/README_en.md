@@ -1,38 +1,98 @@
 > 🏠 [Back to Homepage](https://github.com/hhtbing) | [中文](./README.md) / **English**
 
-# DIR-MOVE-TOOLS - Windows Directory Migration
+# DIR-MOVE-TOOLS — Windows Batch File Migration
 
-![Platform](https://img.shields.io/badge/Platform-Windows-lightblue)
-![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20Tkinter%20%7C%20PyInstaller-blue)
+![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20GUI-blue)
+![Version](https://img.shields.io/badge/Version-v2.0.0-green)
 
 ## 📋 Project Overview
 
-Windows desktop tool for migrating AppData and large directories using symbolic links (directory junctions), with UAC elevation, whitelist protection, transaction recovery, and SHA-256 integrity verification.
+Windows desktop tool for batch file and directory migration with whitelist protection and GUI interface.
 
-**Version:** v1.9.2  
-**Updated:** 2026-07-15  
-**Requirements:** Windows 10/11 x64
+**Project Type:** Desktop Utility  
+**Version:** v2.0.0  
+**Platform:** Windows
 
 ## ⚡ Core Features
 
-- **Symbolic Link Migration:** Use directory junctions to relocate AppData to another disk
-- **UAC Elevation:** Automatic administrator privilege request
+### Batch Migration
+- Multi-directory simultaneous migration
+- File integrity verification
+- Real-time progress display
+- Resume from interruption support
+
+### Security Protection
 - **Whitelist Protection:** Prevent accidental migration of system-critical directories
-- **Transaction Recovery:** Automatic rollback on failure
-- **Integrity Verification:** SHA-256 checksum validation
-- **GUI Interface:** User-friendly Windows desktop application
-- **Professional Packaging:** PyInstaller EXE with Windows CI
+- Target path validation
+- Pre-operation confirmation mechanism
+- Detailed logging
 
-## 🎯 Use Case
+### GUI Interface
+- Intuitive operation interface
+- Drag-and-drop file selection
+- Real-time progress display
+- Error prompts and handling
 
-Windows C: drive space optimization by moving large directories (AppData, etc.) to secondary drives while maintaining complete directory hierarchy, transparent to applications.
+## 💡 Technical Highlights
+
+### Security Mechanisms
+- System directory whitelist checking
+- Path legality validation
+- Double confirmation before overwrite
+- Rollback-capable operation design
+
+### Performance Optimization
+- Multi-threaded parallel copying
+- Large file chunked processing
+- Intelligent skip strategy
+- Memory usage optimization
+
+### User Experience
+- Drag-and-drop support
+- Batch operation queuing
+- Error recovery mechanisms
+- Operation history tracking
 
 ## 🛠️ Tech Stack
 
+**Core Technologies:**
+- Python (core development)
+- Tkinter (GUI framework)
+- File system operations
+- Multi-threading
 
-## 📊 Features
+**Key Features:**
+- Whitelist validation engine
+- Hash-based integrity checking
+- Transaction-like operations
 
+## 📦 Distribution
+
+**Packaging:**
+- PyInstaller standalone executable
+- No Python environment required
+- Single-click installation
+
+**Configuration:**
+- Config file persistence
+- User preference saving
+- Automatic log archiving
+
+## 🎯 Use Cases
+
+- System drive cleanup and migration
+- Large-scale file organization
+- User data migration
+- Disk space management
+
+## 📝 Whitelist Protection Examples
+
+The tool automatically blocks dangerous operations:
+- Migrating Windows system directories (System32, Windows)
+- Migrating user profile directories (AppData, Desktop without confirmation)
+- Migrating registry-related directories
+- Migrating currently running program directories
 
 ---
 
-*Practical Windows utility demonstrating desktop application development and system-level operations.*
+*Windows utility demonstrating desktop application development and file system operation capabilities.*
