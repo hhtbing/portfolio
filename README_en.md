@@ -2,7 +2,7 @@
 
 > [**中文**](./README.md) | English
 
-This is Benson's project portfolio repository, containing 17 projects across 7 technology domains.
+This is Benson's project portfolio repository, showcasing practical projects across **AI Platform / IoT Embedded / Mobile / Web Full-Stack / Tool Development / Data Services** and more technical domains.
 
 ## 📂 Repository Organization
 
