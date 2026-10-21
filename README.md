@@ -2,7 +2,7 @@
 
 > 中文 | [**English**](./README_en.md)
 
-这是 Benson 的项目作品集仓库，展示横跨 **AI 平台 / IoT 嵌入式 / 移动端 / Web 全栈 / 工具开发 / 数据服务** 等多个技术领域的实践项目。
+这是 Benson 的项目作品集仓库，展示横跨 **AI 平台 / Agent 基础设施 / IoT 嵌入式 / 移动端 / Web 全栈 / 工具开发 / 数据服务** 等多个技术领域的实践项目。
 
 ## 📂 仓库组织
 
@@ -16,6 +16,8 @@
 
 ### 🤖 AI 与平台类
 - [AgentMeshOS](./projects/01-ai-platform/agentmeshos) - 自托管 AI Agent 平台
+- [Model Router](./projects/01-ai-platform/model-router) - 多模型路由与接入层
+- [Agent Memory Service](./projects/01-ai-platform/mcp-memory-server) - 跨 Agent 长期记忆与上下文服务
 - [Codex Host Bridge](./projects/01-ai-platform/codex-bridge) - 远程开发桥接
 
 ### 📱 移动应用类

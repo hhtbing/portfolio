@@ -2,7 +2,7 @@
 
 > [**中文**](./README.md) | English
 
-This is Benson's project portfolio repository, showcasing practical projects across **AI Platform / IoT Embedded / Mobile / Web Full-Stack / Tool Development / Data Services** and more technical domains.
+This is Benson's project portfolio repository, showcasing practical projects across **AI Platform / Agent Infrastructure / IoT Embedded / Mobile / Web Full-Stack / Tool Development / Data Services** and more technical domains.
 
 ## 📂 Repository Organization
 
@@ -16,6 +16,8 @@ This repository is organized with **Chinese-first, bilingual cross-linking**:
 
 ### 🤖 AI & Platform
 - [AgentMeshOS](./projects/01-ai-platform/agentmeshos) - Self-Hosted AI Agent Platform
+- [Model Router](./projects/01-ai-platform/model-router) - Multi-Model Routing and Access Layer
+- [Agent Memory Service](./projects/01-ai-platform/mcp-memory-server) - Cross-Agent Long-Term Memory and Context Service
 - [Codex Host Bridge](./projects/01-ai-platform/codex-bridge) - Remote Development Bridge
 
 ### 📱 Mobile Applications
