@@ -29,6 +29,7 @@
 - [TI 雷达开发平台](./projects/03-iot-embedded/ti-radar-dev) - 历史参考项目
 
 ### 🌐 Web 与业务系统
+- [Three Dogs](./projects/04-web-business/three-dogs) - 多语言 WooCommerce 家居电商独立站
 - [Owl Website](./projects/04-web-business/owl-website) - 企业官网系统 ([https://www.wisefido.com/](https://www.wisefido.com/))
 - [OwlFront Mock](./projects/04-web-business/owl-front-mock) - 前端演示系统 ([https://demo.wisefido.com/](https://demo.wisefido.com/))
 - [Codex Mobile Control](./projects/04-web-business/codex-mobile-control) - 移动端控制

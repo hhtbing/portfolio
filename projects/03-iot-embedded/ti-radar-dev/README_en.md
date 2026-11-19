@@ -13,6 +13,28 @@ Complete development platform and toolchain based on TI mmWave radar chips. This
 **Technical Domain:** mmWave Radar, Embedded Systems, Signal Processing  
 **Status:** Archived (Technical Reference)
 
+## 🖼️ Radar 3D Deployment and Coverage Analysis
+
+Built on the same radar technology foundation, a Python desktop 3D analysis tool was developed for installation planning, supporting room and furniture modeling, multi-radar placement, field-of-view, occlusion, blind-spot and coverage heatmap analysis.
+
+### 3D Coverage Overview
+
+![3D Coverage Overview and Spatial Point Cloud](images/radar-3d-01.png)
+
+The left panel configures room dimensions, radar mounting position, array parameters, obstacles and functional zones, while the right side renders the 3D point cloud and coverage volume in room coordinates. The header reports 99.0% coverage, 1.0% blind-spot rate and 80.9% volume coverage, with a legend for blind spots, weak spots, compliant areas, satisfied areas and multi-radar coverage.
+
+### 3D Volume Heatmap
+
+![Coverage Heatmap and Occlusion Analysis](images/radar-3d-02.png)
+
+Switching the same scene to a volume heatmap colors the room grid from green to red by signal strength, reporting 87.5% coverage, 1.0% blind-spot rate and 89.9% volume coverage to locate weak areas by height and distance.
+
+### Room Modeling and Occlusion Validation
+
+![Room Modeling and Multi-Radar Placement](images/radar-3d-03.png)
+
+With two furniture blocks added as occluders, coverage drops to 50.9% and the blind-spot rate rises to 49.1%. Per-layer blind-spot rates by Z axis are 1.1%, 27.4%, 51.3% and 59.0%, showing how real furniture layouts affect the installation plan.
+
 ---
 
 ## 🏗️ System Architecture

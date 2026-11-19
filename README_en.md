@@ -29,6 +29,7 @@ This repository is organized with **Chinese-first, bilingual cross-linking**:
 - [TI Radar Development Platform](./projects/03-iot-embedded/ti-radar-dev) - Historical Reference
 
 ### 🌐 Web & Business Systems
+- [Three Dogs](./projects/04-web-business/three-dogs) - Multilingual WooCommerce home textile storefront
 - [Owl Website](./projects/04-web-business/owl-website) - Corporate Website System ([https://www.wisefido.com/](https://www.wisefido.com/))
 - [OwlFront Mock](./projects/04-web-business/owl-front-mock) - Frontend Demo System ([https://demo.wisefido.com/](https://demo.wisefido.com/))
 - [Codex Mobile Control](./projects/04-web-business/codex-mobile-control) - Mobile Control

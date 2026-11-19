@@ -18,6 +18,26 @@ OwlCare 是一个智能健康监护系统，**本人主要负责 Android 应用�
 
 🔗 **Google Play:** https://play.google.com/store/apps/details?id=com.wisefido.owlmonitor
 
+## 🖼️ 案例截图
+
+### 产品官网
+
+![OwlCare 产品官网](images/wisefido-01.png)
+
+英文产品官网首屏包含 Home、Products、Partnership、Contact 导航和 Owl Monitor Demo 入口，主标题为 “Advanced Monitoring. Zero Intrusion.”。产品线分为 Owl Sleep Monitor 和 Posture Awareness Radar：前者用床垫下 BCG 监测心率、呼吸、睡眠阶段和离床，后者用毫米波雷达做跌倒检测、轨迹跟踪和浴室停留提醒。
+
+### OwlCare DEMO 管理看板
+
+![OwlCare DEMO 管理看板](images/wisefido-02.png)
+
+后台左侧是监测总览、告警记录、告警云、住户管理、护理总览、单元管理、设备管理、用户管理、角色管理和标签管理；顶部按未处理、离房、离床、访客、清醒、睡眠等状态筛选；主体按楼栋、房间和床位展示住户卡片，包含睡眠状态、入睡时间、体位图标和告警标记。
+
+### Google Play 发布页
+
+![OwlCare Google Play 发布页](images/wisefido-03.png)
+
+Google Play 商店的 OwlCare 应用页，开发者为 Wisefido，包含安装入口和应用截图，覆盖登录、单位选择、睡眠监测、告警列表和实时监测等界面，证明移动端已经完成商店发布。
+
 ## 🎯 系统组件
 
 | 模块 | 技术栈 | 本人工作 |

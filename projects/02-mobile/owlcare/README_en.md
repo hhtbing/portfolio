@@ -18,6 +18,26 @@ This repository centrally maintains development achievements and technical docum
 
 🔗 **Google Play:** https://play.google.com/store/apps/details?id=com.wisefido.owlmonitor
 
+## 🖼️ Case Screenshots
+
+### Product Website
+
+![OwlCare Product Website](images/wisefido-01.png)
+
+The English product homepage includes Home, Products, Partnership, Contact navigation and an Owl Monitor Demo entry, with the headline "Advanced Monitoring. Zero Intrusion." The product line covers Owl Sleep Monitor and Posture Awareness Radar: the former uses under-mattress BCG sensing for heart rate, respiration, sleep stages and bed-exit detection, while the latter uses mmWave radar for fall detection, trajectory tracking and bathroom-stay alerts.
+
+### OwlCare DEMO Dashboard
+
+![OwlCare DEMO Dashboard](images/wisefido-02.png)
+
+The backend navigation covers monitoring overview, alert records, alert cloud, resident management, care overview, unit management, device management, user management, role management and tag management. The top bar filters by unhandled, out-of-room, left-bed, visitor, awake and sleep states; the main area shows resident cards by building, room and bed with sleep state, bedtime, posture icons and alert markers.
+
+### Google Play Listing
+
+![OwlCare Google Play Listing](images/wisefido-03.png)
+
+The OwlCare listing on Google Play, published by Wisefido, including the install entry and app screenshots for login, unit selection, sleep monitoring, alert lists and real-time monitoring.
+
 ## 🎯 System Components
 
 | Module | Tech Stack | My Work |
