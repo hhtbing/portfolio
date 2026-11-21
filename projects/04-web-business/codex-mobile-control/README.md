@@ -1,16 +1,17 @@
 > 🏠 [返回主页](https://github.com/hhtbing) | **中文** / [English](./README_en.md)
 
-# Codex Mobile Control — 移动编码工作区
+# CloudCLI 部署与集成 — 移动编码工作区
 
-![Tech](https://img.shields.io/badge/Tech-Web%20%7C%20Docker%20%7C%20CloudCLI-purple)
-![Status](https://img.shields.io/badge/Status-Prototype-yellow)
+![Type](https://img.shields.io/badge/Type-Open%20Source%20Deployment-purple)
+![Tech](https://img.shields.io/badge/Tech-systemd%20%7C%20Nginx%20%7C%20CloudCLI-purple)
 
 ## 📋 项目概述
 
-Codex Mobile Control 将基于 CloudCLI 的浏览器可访问 AI 编码工作区打包，适用于桌面和移动设备使用。通过容器化部署，实现随时随地的云端编码体验。
+基于开源项目 CloudCLI 部署的浏览器可访问 AI 编码工作区，通过 systemd 服务化与 Nginx 反向代理对外提供，支持桌面与移动端访问。
 
-**项目类型：** 开发工具  
-**技术栈：** CloudCLI、Docker、Web 技术  
+**项目类型：** 开源软件部署与集成  
+**上游项目：** [CloudCLI](https://github.com/siteboon/claudecodeui)（开源）  
+**我的角色：** 部署、服务化、反向代理、升级与运维，不开发上游功能  
 **目标平台：** 桌面浏览器、平板、手机
 
 ---

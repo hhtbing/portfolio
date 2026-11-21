@@ -16,7 +16,7 @@
 
 ### 🤖 AI 与平台类
 - [AgentMeshOS](./projects/01-ai-platform/agentmeshos) - 自托管 AI Agent 平台
-- [Model Router](./projects/01-ai-platform/model-router) - 多模型路由与接入层
+- [CLIProxyAPI 部署](./projects/01-ai-platform/model-router) - 开源模型网关的部署与配置
 - [Agent Memory Service](./projects/01-ai-platform/mcp-memory-server) - 跨 Agent 长期记忆与上下文服务
 - [Codex Host Bridge](./projects/01-ai-platform/codex-bridge) - 远程开发桥接
 
@@ -32,7 +32,7 @@
 - [Three Dogs](./projects/04-web-business/three-dogs) - 多语言 WooCommerce 家居电商独立站
 - [Owl Website](./projects/04-web-business/owl-website) - 企业官网系统 ([https://www.wisefido.com/](https://www.wisefido.com/))
 - [OwlFront Mock](./projects/04-web-business/owl-front-mock) - 前端演示系统 ([https://demo.wisefido.com/](https://demo.wisefido.com/))
-- [Codex Mobile Control](./projects/04-web-business/codex-mobile-control) - 移动端控制
+- [CloudCLI 部署](./projects/04-web-business/codex-mobile-control) - 移动端编码工作区部署
 
 ### 🔧 工具与实用程序
 - [DIR-MOVE-TOOLS](./projects/05-tools/dir-move-tools) - 目录迁移工具

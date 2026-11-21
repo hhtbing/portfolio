@@ -1,84 +1,58 @@
-> 🏠 [Back to Homepage](https://github.com/hhtbing) | [中文](./README.md) / **English**
+> 🏠 [Back to Home](https://github.com/hhtbing) | [中文](./README.md) / **English**
 
-# Model Router - Multi-Model Routing and Access Layer
+# CLIProxyAPI Deployment and Configuration
 
-![Type](https://img.shields.io/badge/Type-AI%20Infrastructure-blue)
-![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20FastAPI%20%7C%20SQLite-green)
+> [**中文文档**](./README.md) | English
 
-## 📋 Project Overview
+![Type](https://img.shields.io/badge/Type-Open%20Source%20Deployment-blue)
+![Tech](https://img.shields.io/badge/Tech-Docker%20%7C%20Nginx%20%7C%20CLIProxyAPI-green)
 
-Model Router is a model access layer for AI agents and multi-client environments. It consolidates different providers, model catalogs, and protocol entry points into a unified service, with configurable and traceable routing for model selection, key pools, cooldown and failover, health checks, and usage visibility.
+## 📋 Overview
 
-**Project Type:** AI Model Infrastructure
+CLIProxyAPI (CPA) is an open-source gateway that unifies access to multiple model providers. This repository maintains its local runtime environment, provider and model configuration, client directory, health verification and rollback procedure.
 
-**Development Period:** October 2026 - Present
+**Project type:** Open-source deployment and operations
 
-**Project Status:** Production
+**Upstream:** [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) (open source, following official releases)
 
-## 🎯 Problems Solved
+**My role:** Deployment, configuration, verification and operations. I do not develop CPA, modify upstream code, or maintain a long-lived fork.
 
-1. **Multi-provider complexity:** Model services differ in protocols, authentication, and error behavior.
-2. **Manual failover:** Credential or upstream failures require a consistent cooldown and fallback policy.
-3. **Protocol fragmentation:** Agent clients need both Responses and Chat-style model access.
-4. **Limited runtime visibility:** Model availability, usage, and failure reasons need unified observation.
+## 🎯 What I do
 
-## ⚡ Core Features
+1. **Runtime:** Containerized deployment, reverse proxy, TLS entry and boot-time startup.
+2. **Provider and model configuration:** Access parameters, model catalog and protocol paths for each provider.
+3. **Client directory:** Unified model aliases and endpoint addresses for Codex, OpenCode, OpenClaw and other clients.
+4. **Health verification:** Connectivity checks, model availability validation and fallback procedure.
+5. **Version policy:** Follow official releases, validate compatibility before upgrading, keep a rollback path.
 
-### 1. Unified Protocol Entry
-- Accepts client requests and returns model responses through one service
-- Supports Responses/Chat protocol passthrough
-- Keeps client access decoupled from provider adapters
+## 🧱 Upstream capabilities vs. my work
 
-### 2. Provider and Model Routing
-- Supports multiple model providers and model catalogs
-- Selects models and upstream paths through configuration
-- Normalizes authentication, errors, and response formats
+| Category | Content |
+|---|---|
+| Provided by CPA | Multi-provider protocol adaptation, model routing, credential pool, cooldown switching, usage statistics, WebUI dashboard |
+| My contribution | Deployment orchestration, provider and model configuration, client alias directory, health check scripts, upgrade and rollback procedure |
 
-### 3. Availability and Cooldown
-- Supports key pools and credential rotation
-- Applies cooldown and failover for unhealthy models or credentials
-- Falls back according to routing policy
+**Positioning:** Described as "deployment of the open-source CLIProxyAPI gateway with multi-client integration", not as a self-built model routing service.
 
-### 4. Health and Usage Visibility
-- Records model availability and routing state
-- Observes request volume, errors, and failover behavior
-- Provides evidence for troubleshooting and capacity decisions
+## 🏗️ Deployment shape
 
-## 🏗️ System Architecture
-
-```
-Agent / Client
-        ↓
-Responses / Chat Protocol Entry
-        ↓
-Model Selection and Provider Routing
-        ├─ Model Catalog and Configuration
-        ├─ Key Pools and Cooldown State
-        └─ Health and Usage Visibility
-        ↓
-Upstream Model Services
+```text
+Codex / OpenCode / OpenClaw clients
+            ↓ unified model aliases
+       Nginx reverse proxy (TLS)
+            ↓
+     CLIProxyAPI container (official release)
+            ↓ dispatch by provider
+  Model services (multiple protocols)
 ```
 
-## 💡 Technical Highlights
+## ⚙️ Operations notes
 
-- Separates routing decisions from provider adapters for easier expansion.
-- Centralizes cooldown, error handling, and fallback policies.
-- Reduces the cost of connecting agents to different model services.
-- Keeps structured state and operational evidence for verification.
+- Back up configuration and container image tags before changes; re-read health status afterwards.
+- Model alias changes must be synced to the client directory.
+- Upgrades follow official releases; failed upgrades roll back to the previous working image.
+- The dashboard is for internal observation only; public materials do not show live usage or provider details.
 
-## 🛠️ Tech Stack
+## 📌 Note
 
-- Python / FastAPI
-- SQLite
-- Responses / Chat protocols
-- Multi-provider routing, key pools, and cooldown
-- Health checks, logging, and usage visibility
-
-## 🔗 Related Links
-
-- Profile: https://github.com/hhtbing
-- Portfolio: https://github.com/hhtbing/portfolio
-
----
-
-*A unified access and reliable routing layer for multi-model environments.*
+This page documents a deployment and configuration practice, not the CPA product itself. CPA capabilities belong to the upstream project; this repository only keeps the configuration, scripts and verification records required to run it.

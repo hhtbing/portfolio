@@ -1,16 +1,17 @@
 > 🏠 [Back to Homepage](https://github.com/hhtbing) | [中文](./README.md) / **English**
 
-# Codex Mobile Control — Mobile Coding Workspace
+# CloudCLI Deployment and Integration — Mobile Coding Workspace
 
-![Tech](https://img.shields.io/badge/Tech-Web%20%7C%20Docker%20%7C%20CloudCLI-purple)
-![Status](https://img.shields.io/badge/Status-Prototype-yellow)
+![Type](https://img.shields.io/badge/Type-Open%20Source%20Deployment-purple)
+![Tech](https://img.shields.io/badge/Tech-systemd%20%7C%20Nginx%20%7C%20CloudCLI-purple)
 
 ## 📋 Project Overview
 
-Codex Mobile Control packages browser-accessible AI coding workspace based on CloudCLI, suitable for desktop and mobile devices. Through containerized deployment, it enables anytime, anywhere cloud coding experience.
+A browser-accessible AI coding workspace deployed from the open-source CloudCLI project, exposed through a systemd service behind an Nginx reverse proxy, supporting desktop and mobile access.
 
-**Project Type:** Development Tool  
-**Tech Stack:** CloudCLI, Docker, Web Technologies  
+**Project Type:** Open-source deployment and integration  
+**Upstream:** [CloudCLI](https://github.com/siteboon/claudecodeui) (open source)  
+**My Role:** Deployment, service management, reverse proxy, upgrades and operations; no upstream feature development  
 **Target Platforms:** Desktop Browser, Tablet, Mobile
 
 ---

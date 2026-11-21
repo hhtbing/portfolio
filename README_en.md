@@ -16,7 +16,7 @@ This repository is organized with **Chinese-first, bilingual cross-linking**:
 
 ### 🤖 AI & Platform
 - [AgentMeshOS](./projects/01-ai-platform/agentmeshos) - Self-Hosted AI Agent Platform
-- [Model Router](./projects/01-ai-platform/model-router) - Multi-Model Routing and Access Layer
+- [CLIProxyAPI Deployment](./projects/01-ai-platform/model-router) - Open-source model gateway deployment and configuration
 - [Agent Memory Service](./projects/01-ai-platform/mcp-memory-server) - Cross-Agent Long-Term Memory and Context Service
 - [Codex Host Bridge](./projects/01-ai-platform/codex-bridge) - Remote Development Bridge
 
@@ -32,7 +32,7 @@ This repository is organized with **Chinese-first, bilingual cross-linking**:
 - [Three Dogs](./projects/04-web-business/three-dogs) - Multilingual WooCommerce home textile storefront
 - [Owl Website](./projects/04-web-business/owl-website) - Corporate Website System ([https://www.wisefido.com/](https://www.wisefido.com/))
 - [OwlFront Mock](./projects/04-web-business/owl-front-mock) - Frontend Demo System ([https://demo.wisefido.com/](https://demo.wisefido.com/))
-- [Codex Mobile Control](./projects/04-web-business/codex-mobile-control) - Mobile Control
+- [CloudCLI Deployment](./projects/04-web-business/codex-mobile-control) - Mobile coding workspace deployment
 
 ### 🔧 Tools & Utilities
 - [DIR-MOVE-TOOLS](./projects/05-tools/dir-move-tools) - Directory Migration Tool
